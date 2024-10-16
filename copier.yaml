@@ -1,0 +1,33 @@
+# ref: [Configuring a template - copier](https://copier.readthedocs.io/en/stable/configuring/)
+
+_answers_file: .github/copier/.copier-answers.share.yaml
+
+_jinja_extensions:
+  - cookiecutter.extensions.SlugifyExtension
+
+_skip_if_exists:
+  - .cspell.json
+  - .github/.mega-linter.yaml
+  - LICENSE
+
+_subdirectory: template
+
+owner:
+  type: str
+  help: The account owner of the repository.
+  default: liblaf
+
+license:
+  type: str
+  help: Add a license to your project.
+  choices:
+    MIT License:
+      value: MIT
+    Other:
+      value: other
+  default: MIT
+
+copyright_holder:
+  type: str
+  help: The copyright holder of the repository.
+  default: "{{ owner }}"
