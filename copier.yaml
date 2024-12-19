@@ -1,6 +1,6 @@
-# ref: [Configuring a template - copier](https://copier.readthedocs.io/en/stable/configuring/)
+# https://copier.readthedocs.io/en/stable/configuring/
 
-_answers_file: .github/copier/.copier-answers.share.yaml
+_answers_file: .github/copier/.copier-answers-share.yaml
 
 _jinja_extensions:
   - cookiecutter.extensions.SlugifyExtension
