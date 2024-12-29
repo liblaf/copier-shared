@@ -39,3 +39,38 @@ jobs:
           token: ${{ secrets.PAT || github.token }}
           config-file: https://github.com/liblaf/.github/raw/refs/heads/main/.github/labels.yaml
           delete-other-labels: false
+
+  repo-edit:
+    name: Repo Edit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repo Edit
+        run: |-
+          gh repo edit ${{ github.repository }} \
+            --allow-forking \
+            --allow-update-branch \
+            --default-branch "main" \
+            --delete-branch-on-merge \
+            --enable-auto-merge \
+            --enable-discussions \
+            --enable-issues \
+            --enable-merge-commit=false \
+            --enable-rebase-merge=false \
+            --enable-squash-merge \
+            --enable-wiki=false
+        env:
+          GH_TOKEN: ${{ secrets.PAT || github.token }}
+
+  set-default-workflow-permissions:
+    name: Set Default Workflow Permissions
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set Default Workflow Permissions
+        run: |-
+          # https://docs.github.com/en/rest/actions/permissions#set-default-workflow-permissions-for-a-repository
+          gh api /repos/${{ github.repository }}/actions/permissions/workflow \
+            --field default_workflow_permissions="read" \
+            --field can_approve_pull_request_reviews=true \
+            --method PUT
+        env:
+          GH_TOKEN: ${{ secrets.PAT || github.token }}
