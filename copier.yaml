@@ -35,14 +35,3 @@ copyright_holder:
   type: str
   help: The copyright holder of the repository.
   default: "{{ owner }}"
-
-release_type:
-  type: str
-  help: release-type
-  choices:
-    go: go
-    node: node
-    python: python
-    rust: rust
-    "NULL": ""
-  default: ""
