@@ -47,7 +47,6 @@ jobs:
       - name: Repo Edit
         run: |-
           gh repo edit ${{ github.repository }} \
-            --allow-forking \
             --allow-update-branch \
             --default-branch "main" \
             --delete-branch-on-merge \
