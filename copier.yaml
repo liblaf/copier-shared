@@ -2,9 +2,6 @@
 
 _answers_file: .github/copier/.copier-answers.share.yaml
 
-_jinja_extensions:
-  - cookiecutter.extensions.SlugifyExtension
-
 _migrations:
   - command: rm --force .github/workflows/megalinter.yaml
 
