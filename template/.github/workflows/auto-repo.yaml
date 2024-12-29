@@ -1,4 +1,4 @@
-name: Auto Copier Update
+name: (Auto) Repo
 
 on:
   schedule:
@@ -26,3 +26,16 @@ jobs:
           commit_user_name: ${{ github.actor }}
           commit_user_email: ${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com
           commit_author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+
+  label-sync:
+    name: Label Sync
+    permissions:
+      issues: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Label Sync
+        uses: EndBug/label-sync@v2
+        with:
+          token: ${{ secrets.PAT || github.token }}
+          config-file: https://github.com/liblaf/.github/raw/refs/heads/main/.github/labels.yaml
+          delete-other-labels: false

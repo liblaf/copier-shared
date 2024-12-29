@@ -3,7 +3,11 @@
 _answers_file: .github/copier/.copier-answers.share.yaml
 
 _migrations:
-  - command: rm --force .github/workflows/megalinter.yaml
+  - rm --force .github/workflows/auto-copier-update.yaml
+  - rm --force .github/workflows/auto-label-sync.yaml
+  - rm --force .github/workflows/auto-merge.yaml
+  - rm --force .github/workflows/auto-review.yaml
+  - rm --force .github/workflows/megalinter.yaml
 
 _skip_if_exists:
   - .cspell.json
@@ -11,6 +15,13 @@ _skip_if_exists:
   - LICENSE
 
 _subdirectory: template
+
+_tasks:
+  - rm --force .github/workflows/auto-copier-update.yaml
+  - rm --force .github/workflows/auto-label-sync.yaml
+  - rm --force .github/workflows/auto-merge.yaml
+  - rm --force .github/workflows/auto-review.yaml
+  - rm --force .github/workflows/megalinter.yaml
 
 owner:
   type: str
