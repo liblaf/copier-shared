@@ -1,6 +1,9 @@
 name: (Auto) Repo
 
 on:
+  push:
+    paths:
+      - .github/workflows/auto-repo.yaml
   schedule:
     - cron: "0 0 * * 0"
   workflow_dispatch:
