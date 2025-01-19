@@ -1,8 +1,8 @@
 name: (Auto) PR
 
 on:
+  pull_request:
   schedule:
-    - cron: "0 0 * * *"
     - cron: "0 0 * * 0"
   workflow_dispatch:
 
@@ -11,12 +11,10 @@ jobs:
     name: Merge
     permissions:
       pull-requests: write
-    if: >-
-      github.event_name == 'workflow_dispatch' ||
-      ( github.event_name == 'schedule' && github.event.schedule == '0 0 * * 0' )
     runs-on: ubuntu-latest
     steps:
-      - name: Merge
+      - if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        name: Merge
         uses: liblaf/actions/auto-merge@main
         with:
           add-label: automerge
@@ -27,9 +25,6 @@ jobs:
     name: Review
     permissions:
       pull-requests: write
-    if: >-
-      github.event_name == 'workflow_dispatch' ||
-      ( github.event_name == 'schedule' && github.event.schedule == '0 0 * * *' )
     runs-on: ubuntu-latest
     steps:
       - name: Review
