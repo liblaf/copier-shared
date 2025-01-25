@@ -62,6 +62,17 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PAT || github.token }}
 
+  ruleset-import:
+    name: Ruleset Import
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ruleset Import
+        uses: liblaf/actions/ruleset-import@main
+        with:
+          token: ${{ secrets.PAT || github.token }}
+          source-repo: liblaf/.github
+          source-ruleset-id: 3407904
+
   set-default-workflow-permissions:
     name: Set Default Workflow Permissions
     runs-on: ubuntu-latest
