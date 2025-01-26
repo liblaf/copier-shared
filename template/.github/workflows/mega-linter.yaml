@@ -28,3 +28,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(mega-linter): apply linters fixes"
+          add_options: --update
