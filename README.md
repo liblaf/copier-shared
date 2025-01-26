@@ -1,10 +1,12 @@
 <div align="center"><a name="readme-top"></a>
 
-<img height="160" src="https://raw.githubusercontent.com/copier-org/copier/refs/heads/master/img/logo.svg" />
+<img height="120" src="https://raw.githubusercontent.com/copier-org/copier/refs/heads/master/img/logo.svg" />
+<img height="120" src="https://gw.alipayobjects.com/zos/kitchen/qJ3l3EPsdW/split.svg" />
+<img height="120" src="https://api.iconify.design/vscode-icons/folder-type-shared.svg" />
 
 <h1>Copier Share</h1>
 
-This repository provides a streamlined template management system using Copier, featuring automated repository updates and MIT license integration. It includes a powerful script for bulk repository updates and a flexible configuration system for managing project templates and workflows.
+This repository provides a comprehensive GitHub template and automation framework for managing repositories efficiently. It features automated workflows for pull requests, repository maintenance, and code quality checks using MegaLinter, along with seamless template updates through Copier integration.
 
 [![][copier-shield]][copier-link] <br />
 [![][github-contributors-shield]][github-contributors-link]
@@ -34,11 +36,14 @@ This repository provides a streamlined template management system using Copier, 
 
 ## ✨ Features
 
-- 🤖 **Automated Repository Management:** The repository includes a script to automatically update multiple repositories using GitHub Actions, making maintenance of multiple projects more efficient;
-- 📜 **Flexible License Management:** Supports MIT license generation with customizable copyright holder information, making it easy to manage licensing across different projects;
-- 🧩 **Template-Based Configuration:** Uses Copier templates for consistent project setup, allowing for easy customization and standardization across repositories;
-- 🛠️ **Workflow Cleanup:** Includes automated cleanup of unnecessary GitHub workflows, ensuring a clean and focused repository structure;
-- 🔄 **Seamless Updates:** The copier.yaml configuration file enables smooth updates and migrations between different versions of the template, reducing manual intervention;
+- 🤖 **Automated Workflows:** Comprehensive GitHub Actions workflows for automated PR management, repository updates, and code quality checks, ensuring consistent and efficient project maintenance;
+- 🧹 **Code Quality Assurance:** Integrated MegaLinter for automated code linting and formatting, maintaining high code quality standards across the repository;
+- 🔄 **Template Management:** Utilizes Copier for seamless template updates and project synchronization, making it easy to maintain consistency across multiple repositories;
+- 📜 **License Management:** Supports MIT License configuration with automatic generation and updates, ensuring proper licensing for your projects;
+- 🏷️ **Label Synchronization:** Automated label synchronization using GitHub Actions, keeping issue and PR labels consistent with organizational standards;
+- 🔧 **Repository Configuration:** Automated repository settings management, including branch protection, merge strategies, and workflow permissions, ensuring best practices are followed;
+- 🔄 **Renovate Integration:** Pre-configured Renovate bot for automated dependency updates, keeping your project dependencies up-to-date and secure;
+- 📂 **Structured Directory Layout:** Well-organized directory structure with clear separation of concerns, making it easy to navigate and maintain the repository.
 
 <div align="right">
 
@@ -128,3 +133,12 @@ Contributions of all types are more than welcome, if you are interested in contr
 </div>
 
 [back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-black?style=flat-square
+
+---
+
+#### 📝 License
+
+Copyright © 2024 [liblaf][profile-link]. <br />
+This project is [MIT](./LICENSE) licensed.
+
+[profile-link]: https://github.com/liblaf
