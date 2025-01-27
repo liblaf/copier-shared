@@ -4,18 +4,18 @@
 <img height="120" src="https://gw.alipayobjects.com/zos/kitchen/qJ3l3EPsdW/split.svg" />
 <img height="120" src="https://api.iconify.design/vscode-icons/folder-type-shared.svg" />
 
-<h1>Copier Share</h1>
+<h1>Copier Shared</h1>
 
 This repository provides a comprehensive GitHub template and automation framework for managing repositories efficiently. It features automated workflows for pull requests, repository maintenance, and code quality checks using MegaLinter, along with seamless template updates through Copier integration.
 
 [![Made with Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-black.json)](https://github.com/copier-org/copier) <br />
-[![GitHub contributors](https://img.shields.io/github/contributors/liblaf/copier-share)](https://github.com/liblaf/copier-share/graphs/contributors)
-[![GitHub forks](https://img.shields.io/github/forks/liblaf/copier-share)](https://img.shields.io/github/forks/liblaf/copier-share)
-[![GitHub Repo stars](https://img.shields.io/github/stars/liblaf/copier-share)](https://github.com/liblaf/copier-share/stargazers)
-[![GitHub Issues](https://img.shields.io/github/issues/liblaf/copier-share)](https://github.com/liblaf/copier-share/issues)
-[![GitHub License](https://img.shields.io/github/license/liblaf/copier-share)](https://github.com/liblaf/copier-share/blob/main/LICENSE)
+[![GitHub contributors](https://img.shields.io/github/contributors/liblaf/copier-shared)](https://github.com/liblaf/copier-shared/graphs/contributors)
+[![GitHub forks](https://img.shields.io/github/forks/liblaf/copier-shared)](https://img.shields.io/github/forks/liblaf/copier-shared)
+[![GitHub Repo stars](https://img.shields.io/github/stars/liblaf/copier-shared)](https://github.com/liblaf/copier-shared/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/liblaf/copier-shared)](https://github.com/liblaf/copier-shared/issues)
+[![GitHub License](https://img.shields.io/github/license/liblaf/copier-shared)](https://github.com/liblaf/copier-shared/blob/main/LICENSE)
 
-[Changelog](https://github.com/liblaf/copier-python/blob/main/CHANGELOG.md) · [Report Bug](https://github.com/liblaf/copier-share/issues) · [Request Feature](https://github.com/liblaf/copier-share/issues)
+[Changelog](https://github.com/liblaf/copier-python/blob/main/CHANGELOG.md) · [Report Bug](https://github.com/liblaf/copier-shared/issues) · [Request Feature](https://github.com/liblaf/copier-shared/issues)
 
 ![banner](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
@@ -40,10 +40,10 @@ This repository provides a comprehensive GitHub template and automation framewor
 
 ## 📦 Installation
 
-To install `gh:liblaf/copier-share`, run the following command:
+To install `gh:liblaf/copier-shared`, run the following command:
 
 ```bash
-$ copier copy --trust gh:liblaf/copier-share .
+$ copier copy --trust gh:liblaf/copier-shared .
 ```
 
 <div align="right">
@@ -56,13 +56,13 @@ $ copier copy --trust gh:liblaf/copier-share .
 
 You can use Github Codespaces for online development:
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/liblaf/copier-share)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/liblaf/copier-shared)
 
 Or clone it for local development:
 
 ```bash
-$ git clone https://github.com/liblaf/copier-share.git
-$ cd copier-share
+$ git clone https://github.com/liblaf/copier-shared.git
+$ cd copier-shared
 ```
 
 <div align="right">
@@ -73,11 +73,11 @@ $ cd copier-share
 
 ## 🤝 Contributing
 
-Contributions of all types are more than welcome, if you are interested in contributing code, feel free to check out our GitHub [Issues](https://github.com/liblaf/copier-share/issues) to get stuck in to show us what you’re made of.
+Contributions of all types are more than welcome, if you are interested in contributing code, feel free to check out our GitHub [Issues](https://github.com/liblaf/copier-shared/issues) to get stuck in to show us what you’re made of.
 
-[![PR WELCOME](https://img.shields.io/badge/%F0%9F%A4%AF%20PR%20WELCOME-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge)](https://github.com/liblaf/copier-share/pulls)
+[![PR WELCOME](https://img.shields.io/badge/%F0%9F%A4%AF%20PR%20WELCOME-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge)](https://github.com/liblaf/copier-shared/pulls)
 
-[![Contributors](https://contrib.rocks/image?repo=liblaf%2Fcopier-share)](https://github.com/liblaf/copier-share/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=liblaf%2Fcopier-shared)](https://github.com/liblaf/copier-shared/graphs/contributors)
 
 <div align="right">
 
@@ -91,7 +91,7 @@ Contributions of all types are more than welcome, if you are interested in contr
 
 - **[Copier Python](https://github.com/liblaf/copier-python)** - 🚀 A comprehensive Python project template with automated workflows, CI/CD integration, and modern development tools. Features include MegaLinter for code quality, Copier for template updates, and Renovate for dependency management. Perfect for building scalable Python packages with best practices! 🐍✨
 - **[Copier Release](https://github.com/liblaf/copier-release)** - 🚀 Automated GitHub Repository Management Toolkit: A comprehensive set of workflows and templates for automating repository maintenance, PR management, and release processes. Includes Copier updates, MegaLinter integration, and Release Please automation. Perfect for maintaining clean, consistent, and efficient GitHub repositories! 🛠️✨
-- **[Copier Share](https://github.com/liblaf/copier-share)** - 🤖✨ A comprehensive GitHub repository template with automated workflows for PR management, repository maintenance, and code quality checks. Features include auto-merging PRs, Copier updates, label synchronization, and MegaLinter integration for consistent code standards. Perfect for maintaining clean, efficient, and well-organized repositories! 🚀🔧
+- **[Copier Shared](https://github.com/liblaf/copier-shared)** - 🤖✨ A comprehensive GitHub repository template with automated workflows for PR management, repository maintenance, and code quality checks. Features include auto-merging PRs, Copier updates, label synchronization, and MegaLinter integration for consistent code standards. Perfect for maintaining clean, efficient, and well-organized repositories! 🚀🔧
 - **[Copier Typescript](https://github.com/liblaf/copier-typescript)** - 🚀 A robust TypeScript project template with automated workflows, CI/CD pipelines, and comprehensive linting. Features include auto-PR management, copier updates, and MegaLinter integration for code quality. Perfect for scalable, maintainable, and efficient TypeScript projects! 🛠️✨
 
 ### Credits
@@ -109,4 +109,4 @@ Contributions of all types are more than welcome, if you are interested in contr
 #### 📝 License
 
 Copyright © 2024 [liblaf](https://github.com/liblaf). <br />
-This project is [MIT](https://github.com/liblaf/copier-share/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/liblaf/copier-shared/blob/main/LICENSE) licensed.
