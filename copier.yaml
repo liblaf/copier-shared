@@ -1,9 +1,9 @@
 # https://copier.readthedocs.io/en/stable/configuring/
 
-_answers_file: .github/copier/.copier-answers.share.yaml
+_answers_file: .github/copier/.copier-answers.shared.yaml
 
 _migrations:
-  - mv --force --no-target-directory --verbose .github/copier/.copier-answers.share.yaml .github/copier/.copier-answers.shared.yaml
+  - mv --force --no-target-directory --verbose .github/copier/.copier-answers.share.yaml .github/copier/.copier-answers.shared.yaml || true
   - rm --force --verbose .github/.mega-linter.yaml
   - rm --force --verbose .github/workflows/auto-copier-update.yaml
   - rm --force --verbose .github/workflows/auto-label-sync.yaml
@@ -21,7 +21,7 @@ _skip_if_exists:
 _subdirectory: template
 
 _tasks:
-  - mv --force --no-target-directory --verbose .github/copier/.copier-answers.share.yaml .github/copier/.copier-answers.shared.yaml
+  - mv --force --no-target-directory --verbose .github/copier/.copier-answers.share.yaml .github/copier/.copier-answers.shared.yaml || true
   - rm --force --verbose .github/.mega-linter.yaml
   - rm --force --verbose .github/workflows/auto-copier-update.yaml
   - rm --force --verbose .github/workflows/auto-label-sync.yaml
