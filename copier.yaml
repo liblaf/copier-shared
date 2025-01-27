@@ -3,15 +3,16 @@
 _answers_file: .github/copier/.copier-answers.share.yaml
 
 _migrations:
-  - rm --force .github/.mega-linter.yaml
-  - rm --force .github/workflows/auto-copier-update.yaml
-  - rm --force .github/workflows/auto-label-sync.yaml
-  - rm --force .github/workflows/auto-merge.yaml
-  - rm --force .github/workflows/auto-pr.yaml
-  - rm --force .github/workflows/auto-repo.yaml
-  - rm --force .github/workflows/auto-review.yaml
-  - rm --force .github/workflows/mega-linter.yaml
-  - rm --force .github/workflows/megalinter.yaml
+  - mv --force --no-target-directory --verbose .github/copier/.copier-answers.share.yaml .github/copier/.copier-answers.shared.yaml
+  - rm --force --verbose .github/.mega-linter.yaml
+  - rm --force --verbose .github/workflows/auto-copier-update.yaml
+  - rm --force --verbose .github/workflows/auto-label-sync.yaml
+  - rm --force --verbose .github/workflows/auto-merge.yaml
+  - rm --force --verbose .github/workflows/auto-pr.yaml
+  - rm --force --verbose .github/workflows/auto-repo.yaml
+  - rm --force --verbose .github/workflows/auto-review.yaml
+  - rm --force --verbose .github/workflows/mega-linter.yaml
+  - rm --force --verbose .github/workflows/megalinter.yaml
 
 _skip_if_exists:
   - .cspell.json
@@ -20,15 +21,16 @@ _skip_if_exists:
 _subdirectory: template
 
 _tasks:
-  - rm --force .github/.mega-linter.yaml
-  - rm --force .github/workflows/auto-copier-update.yaml
-  - rm --force .github/workflows/auto-label-sync.yaml
-  - rm --force .github/workflows/auto-merge.yaml
-  - rm --force .github/workflows/auto-pr.yaml
-  - rm --force .github/workflows/auto-repo.yaml
-  - rm --force .github/workflows/auto-review.yaml
-  - rm --force .github/workflows/mega-linter.yaml
-  - rm --force .github/workflows/megalinter.yaml
+  - mv --force --no-target-directory --verbose .github/copier/.copier-answers.share.yaml .github/copier/.copier-answers.shared.yaml
+  - rm --force --verbose .github/.mega-linter.yaml
+  - rm --force --verbose .github/workflows/auto-copier-update.yaml
+  - rm --force --verbose .github/workflows/auto-label-sync.yaml
+  - rm --force --verbose .github/workflows/auto-merge.yaml
+  - rm --force --verbose .github/workflows/auto-pr.yaml
+  - rm --force --verbose .github/workflows/auto-repo.yaml
+  - rm --force --verbose .github/workflows/auto-review.yaml
+  - rm --force --verbose .github/workflows/mega-linter.yaml
+  - rm --force --verbose .github/workflows/megalinter.yaml
 
 owner:
   type: str
