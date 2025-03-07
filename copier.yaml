@@ -11,8 +11,10 @@ _migrations:
   - rm --force --verbose .github/workflows/auto-pr.yaml
   - rm --force --verbose .github/workflows/auto-repo.yaml
   - rm --force --verbose .github/workflows/auto-review.yaml
-  - rm --force --verbose .github/workflows/mega-linter.yaml
   - rm --force --verbose .github/workflows/megalinter.yaml
+  - rm --force --verbose .github/workflows/shared-mega-linter.yaml
+  - rm --force --verbose .github/workflows/shared-pr.yaml
+  - rm --force --verbose .github/workflows/shared-repo.yaml
 
 _skip_if_exists:
   - .cspell.json
@@ -29,8 +31,10 @@ _tasks:
   - rm --force --verbose .github/workflows/auto-pr.yaml
   - rm --force --verbose .github/workflows/auto-repo.yaml
   - rm --force --verbose .github/workflows/auto-review.yaml
-  - rm --force --verbose .github/workflows/mega-linter.yaml
   - rm --force --verbose .github/workflows/megalinter.yaml
+  - rm --force --verbose .github/workflows/shared-mega-linter.yaml
+  - rm --force --verbose .github/workflows/shared-pr.yaml
+  - rm --force --verbose .github/workflows/shared-repo.yaml
 
 owner:
   type: str

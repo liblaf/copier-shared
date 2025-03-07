@@ -4,7 +4,7 @@
 # https://github.com/oxsecurity/megalinter/blob/main/mega-linter-runner/generators/mega-linter/templates/mega-linter.yml
 # https://megalinter.io
 
-name: (Shared) MegaLinter
+name: MegaLinter
 
 on:
   push:
