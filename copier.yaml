@@ -1,6 +1,11 @@
-# https://copier.readthedocs.io/en/stable/configuring/
+# ref: <https://copier.readthedocs.io/en/stable/configuring/>
+# ref: <https://gitlab.com/dreamer-labs/libraries/jinja2-ansible-filters/>
+# ref: <https://jinja.palletsprojects.com/en/stable/templates/>
 
 _answers_file: .config/copier/.copier-answers.shared.yaml
+
+_jinja_extensions:
+  - jinja2_slug.SlugExtension
 
 _migrations:
   - mv --force --no-target-directory --verbose .github/copier/.copier-answers.share.yaml .config/copier/.copier-answers.shared.yaml || true
@@ -38,12 +43,20 @@ _tasks:
   - rm --force --verbose .github/workflows/shared-pr.yaml
   - rm --force --verbose .github/workflows/shared-repo.yaml
 
-owner:
+author_name:
   type: str
   default: liblaf
 
-repo:
+author_email:
   type: str
+  default: 30631553+liblaf@users.noreply.github.com
+
+project_name:
+  type: str
+
+project_name_slug:
+  type: str
+  default: "{{ project_name | slugify }}"
 
 license:
   type: str
@@ -54,6 +67,10 @@ license:
       value: other
   default: MIT
 
-copyright_holder:
+github_user:
   type: str
-  default: "{{ owner }}"
+  default: "{{ author_name }}"
+
+github_repo:
+  type: str
+  default: "{{ project_name_slug }}"
