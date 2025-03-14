@@ -40,12 +40,13 @@ _tasks:
 
 owner:
   type: str
-  help: The account owner of the repository.
   default: liblaf
+
+repo:
+  type: str
 
 license:
   type: str
-  help: Add a license to your project.
   choices:
     MIT License:
       value: MIT
@@ -55,5 +56,4 @@ license:
 
 copyright_holder:
   type: str
-  help: The copyright holder of the repository.
   default: "{{ owner }}"
