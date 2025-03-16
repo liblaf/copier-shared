@@ -5,7 +5,7 @@
 _answers_file: .config/copier/.copier-answers.shared.yaml
 
 _jinja_extensions:
-  - jinja2_slug.SlugExtension
+  - cookiecutter.extensions.SlugifyExtension
 
 _migrations:
   - mv --force --no-target-directory --verbose .github/copier/.copier-answers.share.yaml .config/copier/.copier-answers.shared.yaml || true
