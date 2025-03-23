@@ -1,8 +1,7 @@
 {
-  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-types/cspell.schema.json",
-  "version": "0.2",
-  "language": "en",
-  "words": [],
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "allowCompoundWords": true,
+  "enableGlobDot": true,
   "ignorePaths": [
     "**/.cspell.*",
     "**/.git",
@@ -11,5 +10,7 @@
     "**/*.lock*",
     "**/go.sum"
   ],
-  "allowCompoundWords": true
+  "useGitignore": true,
+  "version": "0.2",
+  "words": []
 }

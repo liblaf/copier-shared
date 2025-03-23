@@ -14,4 +14,6 @@ readarray -t repos < <(
 
 for repo in "${repos[@]}"; do
   gh workflow --repo "$repo" run auto-repo.yaml || true
+  gh workflow --repo "$repo" run repo.yaml || true
+  gh workflow --repo "$repo" run shared-repo.yaml || true
 done
