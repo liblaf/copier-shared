@@ -43,6 +43,13 @@ _tasks:
   - rm --force --verbose ".github/workflows/shared-pr.yaml"
   - rm --force --verbose ".github/workflows/shared-repo.yaml"
 
+project_name:
+  type: str
+
+project_name_slug:
+  type: str
+  default: "{{ project_name | slugify }}"
+
 author_name:
   type: str
   default: liblaf
@@ -50,13 +57,6 @@ author_name:
 author_email:
   type: str
   default: 30631553+liblaf@users.noreply.github.com
-
-project_name:
-  type: str
-
-project_name_slug:
-  type: str
-  default: "{{ project_name | slugify }}"
 
 license:
   type: str
