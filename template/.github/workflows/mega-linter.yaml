@@ -40,11 +40,9 @@ jobs:
           token: ${{ steps.auth.outputs.token }}
       - name: Remove MegaLinter Reports
         run: sudo rm --force --recursive "mega-linter.log" "megalinter-reports/"
-      - name: Git Add
-        run: git add --update
       - name: Commit
-        uses: dsanders11/github-app-commit-action@v1
+        uses: liblaf/actions/commit@main
         with:
-          fail-on-no-changes: false
-          message: "chore(mega-linter): apply linters fixes"
+          add-options: --verbose --update
+          message: "chore(mega-linter): apply linter fixes"
           token: ${{ steps.auth.outputs.token }}
