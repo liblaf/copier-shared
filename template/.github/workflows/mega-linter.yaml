@@ -37,6 +37,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          ref: ${{ github.head_ref || github.ref }}
           token: ${{ steps.auth.outputs.token }}
       - name: MegaLinter
         uses: liblaf/actions/mega-linter@main
