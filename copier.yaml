@@ -7,7 +7,7 @@ _answers_file: .config/copier/.copier-answers.shared.yaml
 _jinja_extensions:
   - cookiecutter.extensions.SlugifyExtension
 
-_migrations:
+_migrations: &migrations
   - rm --force --verbose ".github/.mega-linter.yaml"
   - rm --force --verbose ".github/copier/.copier-answers.share.yaml"
   - rm --force --verbose ".github/copier/.copier-answers.shared.yaml"
@@ -29,39 +29,30 @@ _skip_if_exists:
 
 _subdirectory: template
 
-_tasks:
-  - rm --force --verbose ".github/.mega-linter.yaml"
-  - rm --force --verbose ".github/copier/.copier-answers.share.yaml"
-  - rm --force --verbose ".github/copier/.copier-answers.shared.yaml"
-  - rm --force --verbose ".github/workflows/auto-copier-update.yaml"
-  - rm --force --verbose ".github/workflows/auto-label-sync.yaml"
-  - rm --force --verbose ".github/workflows/auto-merge.yaml"
-  - rm --force --verbose ".github/workflows/auto-pr.yaml"
-  - rm --force --verbose ".github/workflows/auto-repo.yaml"
-  - rm --force --verbose ".github/workflows/auto-review.yaml"
-  - rm --force --verbose ".github/workflows/megalinter.yaml"
-  - rm --force --verbose ".github/workflows/repo.yaml"
-  - rm --force --verbose ".github/workflows/shared-mega-linter.yaml"
-  - rm --force --verbose ".github/workflows/shared-pr.yaml"
-  - rm --force --verbose ".github/workflows/shared-repo.yaml"
+_tasks: *migrations
 
 project_name:
   type: str
+  help: Project Name, e.g. "Grapes"
 
 project_name_slug:
   type: str
+  help: project-name-slug, e.g. "grapes"
   default: "{{ project_name | slugify }}"
 
 author_name:
   type: str
+  help: author name
   default: liblaf
 
 author_email:
   type: str
+  help: author email
   default: 30631553+liblaf@users.noreply.github.com
 
 license:
   type: str
+  help: license
   choices:
     MIT License:
       value: MIT
@@ -71,8 +62,15 @@ license:
 
 github_user:
   type: str
+  help: GitHub username
   default: "{{ author_name }}"
 
 github_repo:
   type: str
+  help: GitHub repository name
   default: "{{ project_name_slug }}"
+
+copyright_holder:
+  type: str
+  help: copyright holder
+  default: "{{ author_name }}"
