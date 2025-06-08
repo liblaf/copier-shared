@@ -24,7 +24,6 @@ _migrations: &migrations
   - rm --force --verbose ".github/workflows/shared-repo.yaml"
 
 _skip_if_exists:
-  - .cspell.json
   - LICENSE
 
 _subdirectory: template
