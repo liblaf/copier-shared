@@ -40,8 +40,8 @@ jobs:
       pull-requests: write # ref: <https://megalinter.io/latest/reporters/GitHubCommentReporter/>
     runs-on: ubuntu-latest
     concurrency:
-      group: ${{ github.head_ref || github.ref }}
-      cancel-in-progress: false
+      group: ${{ github.workflow }}-${{ github.ref }}-mega-linter
+      cancel-in-progress: true
     steps:
       - id: auth
         name: Auth App
