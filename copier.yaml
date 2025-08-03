@@ -8,20 +8,21 @@ _jinja_extensions:
   - cookiecutter.extensions.SlugifyExtension
 
 _migrations: &migrations
-  - rm --force --verbose ".github/.mega-linter.yaml"
-  - rm --force --verbose ".github/copier/.copier-answers.share.yaml"
-  - rm --force --verbose ".github/copier/.copier-answers.shared.yaml"
-  - rm --force --verbose ".github/workflows/auto-copier-update.yaml"
-  - rm --force --verbose ".github/workflows/auto-label-sync.yaml"
-  - rm --force --verbose ".github/workflows/auto-merge.yaml"
-  - rm --force --verbose ".github/workflows/auto-pr.yaml"
-  - rm --force --verbose ".github/workflows/auto-repo.yaml"
-  - rm --force --verbose ".github/workflows/auto-review.yaml"
-  - rm --force --verbose ".github/workflows/megalinter.yaml"
-  - rm --force --verbose ".github/workflows/repo.yaml"
-  - rm --force --verbose ".github/workflows/shared-mega-linter.yaml"
-  - rm --force --verbose ".github/workflows/shared-pr.yaml"
-  - rm --force --verbose ".github/workflows/shared-repo.yaml"
+  - rm --force --verbose '.github/.mega-linter.yaml'
+  - rm --force --verbose '.github/copier/.copier-answers.share.yaml'
+  - rm --force --verbose '.github/copier/.copier-answers.shared.yaml'
+  - rm --force --verbose '.github/workflows/auto-copier-update.yaml'
+  - rm --force --verbose '.github/workflows/auto-label-sync.yaml'
+  - rm --force --verbose '.github/workflows/auto-merge.yaml'
+  - rm --force --verbose '.github/workflows/auto-pr.yaml'
+  - rm --force --verbose '.github/workflows/auto-repo.yaml'
+  - rm --force --verbose '.github/workflows/auto-review.yaml'
+  - rm --force --verbose '.github/workflows/megalinter.yaml'
+  - rm --force --verbose '.github/workflows/pr.yaml'
+  - rm --force --verbose '.github/workflows/repo.yaml'
+  - rm --force --verbose '.github/workflows/shared-mega-linter.yaml'
+  - rm --force --verbose '.github/workflows/shared-pr.yaml'
+  - rm --force --verbose '.github/workflows/shared-repo.yaml'
 
 _skip_if_exists:
   - LICENSE
