@@ -6,43 +6,35 @@
 
 name: MegaLinter
 
+run-name: ${{ github.workflow }} @ ${{ github.ref }}
+
 on:
   push:
     branches-ignore:
-      - assets**
+      - assets
+      - dist
       - gh-pages
   pull_request:
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow }} @ ${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  delete-cancelled-runs:
-    name: Delete Cancelled Runs
+  pre:
+    name: Pre
     permissions:
       actions: write
-    runs-on: "ubuntu-latest"
-    steps:
-      - id: workflow
-        name: Get Workflow File
-        run: |-
-          file="${GITHUB_WORKFLOW_REF%@*}"
-          file="$(basename -- "$file")"
-          printf "file=%q\n" "$file" >> "$GITHUB_OUTPUT"
-      - uses: MercuryTechnologies/delete-cancelled-runs@1.0.0
-        with:
-          workflow-file: ${{ steps.workflow.outputs.file }}
-          github-token: ${{ github.token }}
-
-  skip-duplicate-actions:
-    name: Skip Duplicate Actions
     runs-on: ubuntu-latest
     outputs:
-      should-skip: ${{ steps.skip.outputs.should_skip }}
+      should-skip: ${{ steps.pre.outputs.should-skip }}
     steps:
-      - id: skip
+      - id: pre
         name: Skip Duplicate Actions
-        uses: fkirc/skip-duplicate-actions@v5
+        uses: liblaf/actions-ts/pre@dist
         with:
-          concurrent_skipping: same_content_newer
+          cancel-others: true
 
   mega-linter:
     name: MegaLinter
@@ -51,16 +43,13 @@ jobs:
       issues: write # ref: <https://megalinter.io/latest/reporters/GitHubCommentReporter/>
       pull-requests: write # ref: <https://megalinter.io/latest/reporters/GitHubCommentReporter/>
     needs:
-      - skip-duplicate-actions
-    if: needs.skip-duplicate-actions.outputs.should-skip != 'true'
+      - pre
+    if: needs.pre.outputs.should-skip != 'true'
     runs-on: ubuntu-latest
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}-mega-linter
-      cancel-in-progress: true
     steps:
       - id: auth
-        name: Auth App
-        uses: liblaf/actions/auth-app@main
+        name: Authenticate
+        uses: liblaf/actions-ts/authenticate@dist
         with:
           app-id: ${{ secrets.GH_APP_ID }}
           private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
@@ -76,7 +65,7 @@ jobs:
       - name: Remove MegaLinter Reports
         run: sudo rm --force --recursive "mega-linter.log" "megalinter-reports/"
       - name: Commit
-        uses: liblaf/actions/commit@main
+        uses: liblaf/actions-ts/commit@dist
         with:
           add-options: --verbose --update
           message: "chore(mega-linter): apply linter fixes"
