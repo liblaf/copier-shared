@@ -74,7 +74,7 @@ jobs:
           include-hidden-files: true
       - if: success() || failure()
         name: Add Job Summary
-        run: cat 'megalinter-report.md' >> "$GITHUB_STEP_SUMMARY"
+        run: cat 'megalinter-reports/megalinter-report.md' >> "$GITHUB_STEP_SUMMARY"
       - if: github.ref == 'refs/heads/main' && steps.lint.outputs.has-updated-sources > 0
         name: Create PR with Applied Fixes
         uses: peter-evans/create-pull-request@v7
@@ -86,7 +86,7 @@ jobs:
           branch: mega-linter-fix/${{ github.ref_name }}
           sign-commits: true
           title: "chore(mega-linter): apply linters automatic fixes"
-          body-path: megalinter-report.md
+          body-path: megalinter-reports/megalinter-report.md
           labels: automerge
           assignees: ${{ github.repository_owner }}
           reviewers: ${{ github.repository_owner }}
