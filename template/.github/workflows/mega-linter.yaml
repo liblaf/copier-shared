@@ -39,9 +39,9 @@ jobs:
   mega-linter:
     name: MegaLinter
     permissions:
-      contents: write # commit fix
-      issues: write # ref: <https://megalinter.io/latest/reporters/GitHubCommentReporter/>
-      pull-requests: write # ref: <https://megalinter.io/latest/reporters/GitHubCommentReporter/>
+      contents: write
+      issues: write
+      pull-requests: write
     needs:
       - pre
     if: needs.pre.outputs.should-skip != 'true'
@@ -58,15 +58,42 @@ jobs:
         with:
           ref: ${{ github.head_ref || github.ref }}
           token: ${{ steps.auth.outputs.token }}
-      - name: MegaLinter
-        uses: liblaf/actions/mega-linter@main
+      - id: lint
+        name: MegaLinter
+        uses: liblaf/actions-ts/mega-linter@dist
         with:
           token: ${{ steps.auth.outputs.token }}
-      - name: Remove MegaLinter Reports
-        run: sudo rm --force --recursive "mega-linter.log" "megalinter-reports/"
-      - name: Commit
+      - if: success() || failure()
+        name: Upload Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: mega-linter-reports
+          path: |-
+            mega-linter.log
+            megalinter-reports/
+          include-hidden-files: true
+      - if: success() || failure()
+        name: Add Job Summary
+        run: cat 'megalinter-report.md' >> "$GITHUB_STEP_SUMMARY"
+      - if: github.ref == 'refs/heads/main' && steps.lint.outputs.has-updated-sources > 0
+        name: Create PR with Applied Fixes
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ steps.auth.outputs.token }}
+          commit-message: "chore(mega-linter): apply linters automatic fixes"
+          committer: ${{ steps.auth.outputs.committer }}
+          author: ${{ steps.auth.outputs.author }}
+          branch: mega-linter-fix/${{ github.ref_name }}
+          sign-commits: true
+          title: "chore(mega-linter): apply linters automatic fixes"
+          body-path: megalinter-report.md
+          labels: automerge
+          assignees: ${{ github.repository_owner }}
+          reviewers: ${{ github.repository_owner }}
+      - if: github.ref != 'refs/heads/main' && steps.lint.outputs.has-updated-sources > 0
+        name: Commit and Push Applied Linter Fixes
         uses: liblaf/actions-ts/commit@dist
         with:
           add-options: --verbose --update
-          message: "chore(mega-linter): apply linter fixes"
+          message: "chore(mega-linter): apply linters automatic fixes"
           token: ${{ steps.auth.outputs.token }}
