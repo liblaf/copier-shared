@@ -24,9 +24,6 @@ _migrations: &migrations
   - rm --force --verbose '.github/workflows/shared-pr.yaml'
   - rm --force --verbose '.github/workflows/shared-repo.yaml'
 
-_skip_if_exists:
-  - LICENSE
-
 _subdirectory: template
 
 _tasks: *migrations
@@ -49,16 +46,6 @@ author_email:
   type: str
   help: author email
   default: 30631553+liblaf@users.noreply.github.com
-
-license:
-  type: str
-  help: license
-  choices:
-    MIT License:
-      value: MIT
-    Other:
-      value: other
-  default: MIT
 
 github_user:
   type: str
