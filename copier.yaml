@@ -4,6 +4,10 @@
 
 _answers_file: .config/copier/.copier-answers.shared.yaml
 
+_envops:
+  line_statement_prefix: "# %%"
+  line_comment_prefix: "# ##"
+
 _jinja_extensions:
   - cookiecutter.extensions.SlugifyExtension
 
