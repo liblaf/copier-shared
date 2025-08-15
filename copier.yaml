@@ -56,8 +56,3 @@ github_repo:
   type: str
   help: GitHub repository name
   default: "{{ project_name_slug }}"
-
-copyright_holder:
-  type: str
-  help: copyright holder
-  default: "{{ author_name }}"
