@@ -51,6 +51,16 @@ author_email:
   help: author email
   default: 30631553+liblaf@users.noreply.github.com
 
+license:
+  type: str
+  help: license
+  choices:
+    MIT License:
+      value: MIT
+    Other:
+      value: other
+  default: MIT
+
 github_user:
   type: str
   help: GitHub username
