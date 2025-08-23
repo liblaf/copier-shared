@@ -31,13 +31,19 @@ repos:
       - id: dvc-pre-commit
         stages:
           - pre-commit
+        additional_dependencies:
+          - .[all]
       - id: dvc-pre-push
         stages:
           - pre-push
+        additional_dependencies:
+          - .[all]
       - id: dvc-post-checkout
         always_run: true
         stages:
           - post-checkout
+        additional_dependencies:
+          - .[all]
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
     hooks:
