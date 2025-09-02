@@ -1,0 +1,33 @@
+name: pre-commit autoupdate
+
+on:
+  pull_request:
+    paths:
+      - .pre-commit-config.yaml
+
+jobs:
+  approve:
+    name: Approve
+    permissions:
+      pull-requests: write
+    if: github.event.pull_request.user.login == 'pre-commit-ci[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Approve
+        run: gh pr review '${{ github.event.pull_request.html_url }}' --approve
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+
+  auto-merge:
+    name: Auto Merge
+    permissions:
+      pull-requests: write
+    if: github.event.pull_request.user.login == 'pre-commit-ci[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Add Label
+        run: gh pr edit '${{ github.event.pull_request.html_url }}' --add-label 'automerge'
+        env:
+          GH_TOKEN: ${{ github.token }}
