@@ -8,8 +8,6 @@ on:
 jobs:
   approve:
     name: Approve
-    permissions:
-      pull-requests: write
     if: github.event.pull_request.user.login == 'pre-commit-ci[bot]'
     runs-on: ubuntu-latest
     steps:
