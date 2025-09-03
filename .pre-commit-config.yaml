@@ -14,7 +14,7 @@ ci:
     chore(ci): pre-commit autoupdate
   skip:
     # `biome.jsonc` may extend from an NPM package.
-    # `additional_dependencies` does not work.
+    # `additional_dependencies` won't work in this case.
     - biome-check
     - dvc-post-checkout
     - dvc-pre-commit

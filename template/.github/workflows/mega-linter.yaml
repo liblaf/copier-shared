@@ -6,8 +6,6 @@
 
 name: MegaLinter
 
-run-name: ${{ github.workflow }} @ ${{ github.ref }}
-
 on:
   push:
   pull_request:
@@ -24,7 +22,7 @@ jobs:
     steps:
       - id: skip-duplicate
         name: Skip Duplicate
-        uses: liblaf/actions-ts/skip-duplicate@dist
+        uses: liblaf/actions/skip-duplicate@dist
         with:
           cancel-others: true
 
@@ -45,7 +43,7 @@ jobs:
           ref: ${{ github.head_ref || github.ref }}
       - id: lint
         name: MegaLinter
-        uses: liblaf/actions-ts/mega-linter@dist
+        uses: liblaf/actions/mega-linter@dist
       - if: success() || failure()
         name: Upload Reports
         uses: actions/upload-artifact@v4
@@ -55,9 +53,6 @@ jobs:
             mega-linter.log
             megalinter-reports
           include-hidden-files: true
-      - if: success() || failure()
-        name: Add Job Summary
-        run: cat 'megalinter-reports/megalinter-report.md' >> "$GITHUB_STEP_SUMMARY"
       - if: success() || failure()
         name: Remove MegaLinter Reports
         run: |-
@@ -79,7 +74,7 @@ jobs:
           reviewers: ${{ github.repository_owner }}
       - if: steps.lint.outputs.has-updated-sources > 0 && github.ref != 'refs/heads/main'
         name: Commit and Push Applied Linter Fixes
-        uses: liblaf/actions-ts/commit@dist
+        uses: liblaf/actions/commit@dist
         with:
           add-options: --verbose --update
           message: "chore(mega-linter): apply linters automatic fixes"
