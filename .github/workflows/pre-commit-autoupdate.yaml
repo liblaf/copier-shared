@@ -6,8 +6,26 @@ on:
       - .pre-commit-config.yaml
 
 jobs:
+  copy:
+    name: Copy
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Copy
+        run: cp --target-directory='template' --verbose '.pre-commit-config.yaml'
+      - name: Commit
+        uses: liblaf/actions/commit@dist
+        with:
+          message: >-
+            chore(ci): update pre-commit config
+
   approve:
     name: Approve
+    needs:
+      - copy
     if: github.event.pull_request.user.login == 'pre-commit-ci[bot]'
     runs-on: ubuntu-latest
     steps:
