@@ -6,13 +6,15 @@ name: MegaLinter
 on:
   workflow_call:
     inputs:
+      app-id:
+        default: "1022004"
+        required: false
+        type: string
       environment:
         default: MegaLinter
-        required: true
+        required: false
         type: string
     secrets:
-      APP_ID:
-        required: false
       PRIVATE_KEY:
         required: false
 
@@ -23,14 +25,14 @@ jobs:
       contents: write
       pull-requests: write
     environment:
-      name: ${{ inputs.environment || 'MegaLinter' }}
+      name: ${{ inputs.environment }}
     runs-on: ubuntu-latest
     steps:
       - id: auth
         name: Auth
         uses: liblaf/actions/auth@dist
         with:
-          app-id: ${{ vars.APP_ID }}
+          app-id: ${{ inputs.app-id }}
           private-key: ${{ secrets.PRIVATE_KEY }}
       - name: Checkout
         uses: actions/checkout@v5
