@@ -31,9 +31,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Approve
-        run: gh pr review '${{ github.event.pull_request.html_url }}' --approve
-        env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
+        uses: liblaf/actions/approve@dist
+        with:
+          authors: pre-commit-ci[bot]
+          bot: true
+          pull-number: ${{ github.event.pull_request.number }}
+          token: ${{ secrets.GH_PAT }}
 
   auto-merge:
     name: Auto Merge
