@@ -16,6 +16,10 @@ on:
 env:
   FORCE_COLOR: 1
 
+concurrency:
+  group: ${{ github.workflow }} @ ${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   mega-linter:
     name: MegaLinter
