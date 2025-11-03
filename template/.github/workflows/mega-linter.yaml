@@ -8,8 +8,11 @@ name: MegaLinter
 
 on:
   push:
-    branches:
-      - "**"
+    branches-ignore:
+      - copier-update
+      - mega-linter-fix/**
+      - pre-commit-ci-update-config
+      - release-please--branches**
   pull_request:
   workflow_dispatch:
 
@@ -26,8 +29,6 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    # skip pushes from bots
-    if: github.event_name != 'push' || !endsWith(github.actor, '[bot]')
     runs-on: ubuntu-latest
     environment:
       name: MegaLinter
