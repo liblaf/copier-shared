@@ -19,10 +19,6 @@ on:
 env:
   FORCE_COLOR: 1
 
-concurrency:
-  group: ${{ github.workflow }} @ ${{ github.ref }}
-  cancel-in-progress: true
-
 jobs:
   mega-linter:
     name: MegaLinter
@@ -41,6 +37,8 @@ jobs:
           private-key: ${{ secrets.PRIVATE_KEY }}
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          ref: ${{ github.head_ref || github.ref }}
       - id: lint
         name: MegaLinter
         uses: liblaf/actions/mega-linter@v1
