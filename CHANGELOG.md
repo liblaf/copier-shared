@@ -7,18 +7,32 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.1.1](https://github.com/liblaf/copier-shared/releases/tag/v0.1.1) - 2025-11-03
+## [0.1.2](https://github.com/liblaf/copier-shared/releases/tag/v0.1.2) - 2025-12-02
 
 ### 🐛 Bug Fixes
 
-- **(ci)** pin MegaLinter action versions and ignore automated branches - [7530c65](https://github.com/liblaf/copier-shared/commit/7530c651721014d2a804b7600828ac19bb4094f6) by [@liblaf](https://github.com/liblaf)
-- **(ci)** Refine MegaLinter workflow branching and bot exclusion - [2083b41](https://github.com/liblaf/copier-shared/commit/2083b41e0717d0bf0c7c623020e6143a9147ed73) by [@liblaf](https://github.com/liblaf)
-- **(ci)** Add concurrency to MegaLinter workflow - [2bf6f3e](https://github.com/liblaf/copier-shared/commit/2bf6f3e91484754a6b7dcfc12e672050ba422070) by [@liblaf](https://github.com/liblaf)
-- **(ci)** Prevent MegaLinter from running on automated branches - [d624e52](https://github.com/liblaf/copier-shared/commit/d624e5200bdb6ca9068bfb2c5c1e422ac9fe3fbf) by [@liblaf](https://github.com/liblaf)
+- **ci:** Improve MegaLinter workflow stability and accuracy - [5b25308](https://github.com/liblaf/copier-shared/commit/5b253085fbe045ce1314e049cefc6312c55769e7) by [@liblaf](https://github.com/liblaf)
 
 ### ❤️ Contributors
 
 - [@liblaf](https://github.com/liblaf) made their first contribution
+- [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci) made their first contribution in [#27](https://github.com/liblaf/copier-shared/pull/27)
+- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#26](https://github.com/liblaf/copier-shared/pull/26)
+- [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#22](https://github.com/liblaf/copier-shared/pull/22)
+
+## [0.1.1](https://github.com/liblaf/copier-shared/releases/tag/v0.1.1) - 2025-11-03
+
+### 🐛 Bug Fixes
+
+- **ci:** pin MegaLinter action versions and ignore automated branches - [7530c65](https://github.com/liblaf/copier-shared/commit/7530c651721014d2a804b7600828ac19bb4094f6) by [@liblaf](https://github.com/liblaf)
+- **ci:** Refine MegaLinter workflow branching and bot exclusion - [2083b41](https://github.com/liblaf/copier-shared/commit/2083b41e0717d0bf0c7c623020e6143a9147ed73) by [@liblaf](https://github.com/liblaf)
+- **ci:** Add concurrency to MegaLinter workflow - [2bf6f3e](https://github.com/liblaf/copier-shared/commit/2bf6f3e91484754a6b7dcfc12e672050ba422070) by [@liblaf](https://github.com/liblaf)
+- **ci:** Prevent MegaLinter from running on automated branches - [d624e52](https://github.com/liblaf/copier-shared/commit/d624e5200bdb6ca9068bfb2c5c1e422ac9fe3fbf) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf[bot]](https://github.com/apps/liblaf)
+- [@liblaf](https://github.com/liblaf)
 
 ## [0.1.0](https://github.com/liblaf/copier-shared/releases/tag/v0.1.0) - 2025-11-02
 
@@ -28,8 +42,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ✨ Features
 
-- **(template)** add license configuration option - [8cbd268](https://github.com/liblaf/copier-shared/commit/8cbd2688afc05823c90fde0b44765728c747c167) by [@liblaf](https://github.com/liblaf)
-- **(template)** add pre-commit configuration with comprehensive linting hooks - [aa79640](https://github.com/liblaf/copier-shared/commit/aa79640e12c154c7729f64d022eee05086270f2e) by [@liblaf](https://github.com/liblaf)
+- **template:** add license configuration option - [8cbd268](https://github.com/liblaf/copier-shared/commit/8cbd2688afc05823c90fde0b44765728c747c167) by [@liblaf](https://github.com/liblaf)
+- **template:** add pre-commit configuration with comprehensive linting hooks - [aa79640](https://github.com/liblaf/copier-shared/commit/aa79640e12c154c7729f64d022eee05086270f2e) by [@liblaf](https://github.com/liblaf)
 - add script to set PAT secret across all repositories - [dd44c9b](https://github.com/liblaf/copier-shared/commit/dd44c9b92d87802880c901aea3ab345b35c6bc9c) by [@liblaf](https://github.com/liblaf)
 - add release-please configuration and support for multiple release types - [9bb58f4](https://github.com/liblaf/copier-shared/commit/9bb58f44ba430c4b73b27b03e9b6a64bc5338b14) by [@liblaf](https://github.com/liblaf)
 - enhance copier configuration with Jinja2 extensions and improved project metadata - [5ba3eb7](https://github.com/liblaf/copier-shared/commit/5ba3eb71e195e6a51d94d86131fedadb90d446e9) by [@liblaf](https://github.com/liblaf)
@@ -38,10 +52,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🐛 Bug Fixes
 
-- **(ci)** correct MegaLinter report file paths - [d919b4e](https://github.com/liblaf/copier-shared/commit/d919b4e4603980dd0acb8bda24fe7667d92887a4) by [@liblaf](https://github.com/liblaf)
-- **(mega-linter)** preserve report for PR creation - [dd7d24f](https://github.com/liblaf/copier-shared/commit/dd7d24f2372ca7276473afd8a7996f9eaa04a03d) by [@liblaf](https://github.com/liblaf)
-- **(mega-linter)** correct app ID variable reference in auth step - [8ad95aa](https://github.com/liblaf/copier-shared/commit/8ad95aaa379fd3bd0e0ef0b53eaa2c9782149583) by [@liblaf](https://github.com/liblaf)
-- **(template)** correct pre-commit hooks configuration - [941fb0b](https://github.com/liblaf/copier-shared/commit/941fb0b18b555d515c35733b13bc3edc19b715f7) by [@liblaf](https://github.com/liblaf)
+- **ci:** correct MegaLinter report file paths - [d919b4e](https://github.com/liblaf/copier-shared/commit/d919b4e4603980dd0acb8bda24fe7667d92887a4) by [@liblaf](https://github.com/liblaf)
+- **mega-linter:** preserve report for PR creation - [dd7d24f](https://github.com/liblaf/copier-shared/commit/dd7d24f2372ca7276473afd8a7996f9eaa04a03d) by [@liblaf](https://github.com/liblaf)
+- **mega-linter:** correct app ID variable reference in auth step - [8ad95aa](https://github.com/liblaf/copier-shared/commit/8ad95aaa379fd3bd0e0ef0b53eaa2c9782149583) by [@liblaf](https://github.com/liblaf)
+- **template:** correct pre-commit hooks configuration - [941fb0b](https://github.com/liblaf/copier-shared/commit/941fb0b18b555d515c35733b13bc3edc19b715f7) by [@liblaf](https://github.com/liblaf)
 - correct filename inconsistency in copier configuration - [ab6861f](https://github.com/liblaf/copier-shared/commit/ab6861f86f0903acc8d9ff0089af14ff73a643a7) by [@liblaf](https://github.com/liblaf)
 - add git add step before committing in mega-linter workflow - [fc1c03a](https://github.com/liblaf/copier-shared/commit/fc1c03a576e6ac6f669aa238044b2f61c4407947) by [@liblaf](https://github.com/liblaf)
 
@@ -60,11 +74,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ♻ Code Refactoring
 
-- **(ci)** improve direnv loading and workflow configuration - [e71e738](https://github.com/liblaf/copier-shared/commit/e71e738dbafb9b2f2dfa3021388fdb44f8e57487) by [@liblaf](https://github.com/liblaf)
-- **(direnv)** simplify environment source loading - [d1d6b13](https://github.com/liblaf/copier-shared/commit/d1d6b13185352db9774fa69e342a2567e4794352) by [@liblaf](https://github.com/liblaf)
-- **(pre-commit)** remove dvc hooks - [a89653d](https://github.com/liblaf/copier-shared/commit/a89653d4094ef82da0dd5f40583cabf84f66440b) by [@liblaf](https://github.com/liblaf)
-- **(template)** remove license selection and simplify configuration - [879af03](https://github.com/liblaf/copier-shared/commit/879af03b9d137555e82d1b30d993ed99a500adb9) by [@liblaf](https://github.com/liblaf)
-- **(template)** remove copyright_holder variable from copier.yaml - [b00dc51](https://github.com/liblaf/copier-shared/commit/b00dc51746a5c31565a78f39e1beb49861ce9c23) by [@liblaf](https://github.com/liblaf)
+- **ci:** improve direnv loading and workflow configuration - [e71e738](https://github.com/liblaf/copier-shared/commit/e71e738dbafb9b2f2dfa3021388fdb44f8e57487) by [@liblaf](https://github.com/liblaf)
+- **direnv:** simplify environment source loading - [d1d6b13](https://github.com/liblaf/copier-shared/commit/d1d6b13185352db9774fa69e342a2567e4794352) by [@liblaf](https://github.com/liblaf)
+- **pre-commit:** remove dvc hooks - [a89653d](https://github.com/liblaf/copier-shared/commit/a89653d4094ef82da0dd5f40583cabf84f66440b) by [@liblaf](https://github.com/liblaf)
+- **template:** remove license selection and simplify configuration - [879af03](https://github.com/liblaf/copier-shared/commit/879af03b9d137555e82d1b30d993ed99a500adb9) by [@liblaf](https://github.com/liblaf)
+- **template:** remove copyright_holder variable from copier.yaml - [b00dc51](https://github.com/liblaf/copier-shared/commit/b00dc51746a5c31565a78f39e1beb49861ce9c23) by [@liblaf](https://github.com/liblaf)
 - rename shared workflow files and update references - [4adc658](https://github.com/liblaf/copier-shared/commit/4adc65825a53b23954e80778a44ecc0a9030efa5) by [@liblaf](https://github.com/liblaf)
 - simplify copier.yaml configuration - [5cbe6a4](https://github.com/liblaf/copier-shared/commit/5cbe6a4e6e20543b7ce67f7b248cb9c48cba22ea) by [@liblaf](https://github.com/liblaf)
 - reorder variables in copier.yaml - [13bc2e9](https://github.com/liblaf/copier-shared/commit/13bc2e9713b8c00414ff47c0d09449f1d1540db6) by [@liblaf](https://github.com/liblaf)
@@ -73,24 +87,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ⚙️ Continuous Integration
 
-- **(mega-linter)** add --update option to git-auto-commit-action - [0800228](https://github.com/liblaf/copier-shared/commit/0800228d4feb0d7c1d44f868b8d9645f48970e50) by [@liblaf](https://github.com/liblaf)
-- **(mega-linter)** ignore assets branches - [c978139](https://github.com/liblaf/copier-shared/commit/c978139f395aa3ee60cd394895e29705a06f294c) by [@liblaf](https://github.com/liblaf)
-- **(mega-linter)** improve concurrency configuration - [c7900f6](https://github.com/liblaf/copier-shared/commit/c7900f6406493141a228aaf2a228c678dfd1359b) by [@liblaf](https://github.com/liblaf)
-- **(mega-linter)** add duplicate action skipping - [569bd36](https://github.com/liblaf/copier-shared/commit/569bd3617798b24c2671c928ed2135438a7dabd5) by [@liblaf](https://github.com/liblaf)
-- **(mega-linter)** update workflow configuration - [d8fb9a8](https://github.com/liblaf/copier-shared/commit/d8fb9a81d5364706f1273a01b3da7133de770bf8) by [@liblaf](https://github.com/liblaf)
-- **(mega-linter)** improve workflow configuration - [15a19d3](https://github.com/liblaf/copier-shared/commit/15a19d3bdff993b70efc7fa19dc31f8645133450) by [@liblaf](https://github.com/liblaf)
-- **(mega-linter)** expand branch ignore patterns with wildcards - [f800dd4](https://github.com/liblaf/copier-shared/commit/f800dd48b19c6f7dce6ee9e4f167240f66863f06) by [@liblaf](https://github.com/liblaf)
-- **(mega-linter)** enhance report cleanup step - [ea66e53](https://github.com/liblaf/copier-shared/commit/ea66e539af5af395d1c68f49d9a6107f8076b5ef) by [@liblaf](https://github.com/liblaf)
-- **(mega-linter)** add autofix label to auto-fix PRs - [caef9d4](https://github.com/liblaf/copier-shared/commit/caef9d429910ef7ff98c0723b6ca1bd645a00d59) by [@liblaf](https://github.com/liblaf)
-- **(mega-linter)** update actions and remove job summary step - [cfddac2](https://github.com/liblaf/copier-shared/commit/cfddac2cb838e98f32766c95c413e15f000dd6d0) by [@liblaf](https://github.com/liblaf)
-- **(mega-linter)** update actions/upload-artifact to v5 - [9ac0472](https://github.com/liblaf/copier-shared/commit/9ac0472131bb058ada0ce2e710b54f70d0d8b549) by [@liblaf](https://github.com/liblaf)
-- **(pre-commit)** add project dependencies to DVC hooks - [a7aca12](https://github.com/liblaf/copier-shared/commit/a7aca12e29f1d15d67af4f04d21936db8f3a7c33) by [@liblaf](https://github.com/liblaf)
-- **(pre-commit)** skip DVC hooks in CI and reorganize hook order - [ef07748](https://github.com/liblaf/copier-shared/commit/ef077483eb4f579083c8345c77bbdabb2a77f470) by [@liblaf](https://github.com/liblaf)
-- **(pre-commit)** standardize commit messages and add additional dependencies for biome-check hook - [1738a47](https://github.com/liblaf/copier-shared/commit/1738a476078e4b4965179f9c0a2c0ee7d32a0b63) by [@liblaf](https://github.com/liblaf)
-- **(pre-commit)** update commit message format and add shared config for Biome - [6d87008](https://github.com/liblaf/copier-shared/commit/6d87008b5c3a6f71c17339031bc9f3be4fbaba93) by [@liblaf](https://github.com/liblaf)
-- **(pre-commit)** remove biome additional dependencies - [6d69680](https://github.com/liblaf/copier-shared/commit/6d6968092d868a3f9f1c8119b359df2878d34d6f) by [@liblaf](https://github.com/liblaf)
-- **(pre-commit)** improve autoupdate workflow - [f17bc42](https://github.com/liblaf/copier-shared/commit/f17bc42f9353e968c26af1a2949570aab88591b4) by [@liblaf](https://github.com/liblaf)
-- **(pre-commit-autoupdate)** remove unnecessary permissions for approve job - [2292286](https://github.com/liblaf/copier-shared/commit/22922860ea71c5245092dbf84f5459fd3e64f489) by [@liblaf](https://github.com/liblaf)
+- **mega-linter:** add --update option to git-auto-commit-action - [0800228](https://github.com/liblaf/copier-shared/commit/0800228d4feb0d7c1d44f868b8d9645f48970e50) by [@liblaf](https://github.com/liblaf)
+- **mega-linter:** ignore assets branches - [c978139](https://github.com/liblaf/copier-shared/commit/c978139f395aa3ee60cd394895e29705a06f294c) by [@liblaf](https://github.com/liblaf)
+- **mega-linter:** improve concurrency configuration - [c7900f6](https://github.com/liblaf/copier-shared/commit/c7900f6406493141a228aaf2a228c678dfd1359b) by [@liblaf](https://github.com/liblaf)
+- **mega-linter:** add duplicate action skipping - [569bd36](https://github.com/liblaf/copier-shared/commit/569bd3617798b24c2671c928ed2135438a7dabd5) by [@liblaf](https://github.com/liblaf)
+- **mega-linter:** update workflow configuration - [d8fb9a8](https://github.com/liblaf/copier-shared/commit/d8fb9a81d5364706f1273a01b3da7133de770bf8) by [@liblaf](https://github.com/liblaf)
+- **mega-linter:** improve workflow configuration - [15a19d3](https://github.com/liblaf/copier-shared/commit/15a19d3bdff993b70efc7fa19dc31f8645133450) by [@liblaf](https://github.com/liblaf)
+- **mega-linter:** expand branch ignore patterns with wildcards - [f800dd4](https://github.com/liblaf/copier-shared/commit/f800dd48b19c6f7dce6ee9e4f167240f66863f06) by [@liblaf](https://github.com/liblaf)
+- **mega-linter:** enhance report cleanup step - [ea66e53](https://github.com/liblaf/copier-shared/commit/ea66e539af5af395d1c68f49d9a6107f8076b5ef) by [@liblaf](https://github.com/liblaf)
+- **mega-linter:** add autofix label to auto-fix PRs - [caef9d4](https://github.com/liblaf/copier-shared/commit/caef9d429910ef7ff98c0723b6ca1bd645a00d59) by [@liblaf](https://github.com/liblaf)
+- **mega-linter:** update actions and remove job summary step - [cfddac2](https://github.com/liblaf/copier-shared/commit/cfddac2cb838e98f32766c95c413e15f000dd6d0) by [@liblaf](https://github.com/liblaf)
+- **mega-linter:** update actions/upload-artifact to v5 - [9ac0472](https://github.com/liblaf/copier-shared/commit/9ac0472131bb058ada0ce2e710b54f70d0d8b549) by [@liblaf](https://github.com/liblaf)
+- **pre-commit:** add project dependencies to DVC hooks - [a7aca12](https://github.com/liblaf/copier-shared/commit/a7aca12e29f1d15d67af4f04d21936db8f3a7c33) by [@liblaf](https://github.com/liblaf)
+- **pre-commit:** skip DVC hooks in CI and reorganize hook order - [ef07748](https://github.com/liblaf/copier-shared/commit/ef077483eb4f579083c8345c77bbdabb2a77f470) by [@liblaf](https://github.com/liblaf)
+- **pre-commit:** standardize commit messages and add additional dependencies for biome-check hook - [1738a47](https://github.com/liblaf/copier-shared/commit/1738a476078e4b4965179f9c0a2c0ee7d32a0b63) by [@liblaf](https://github.com/liblaf)
+- **pre-commit:** update commit message format and add shared config for Biome - [6d87008](https://github.com/liblaf/copier-shared/commit/6d87008b5c3a6f71c17339031bc9f3be4fbaba93) by [@liblaf](https://github.com/liblaf)
+- **pre-commit:** remove biome additional dependencies - [6d69680](https://github.com/liblaf/copier-shared/commit/6d6968092d868a3f9f1c8119b359df2878d34d6f) by [@liblaf](https://github.com/liblaf)
+- **pre-commit:** improve autoupdate workflow - [f17bc42](https://github.com/liblaf/copier-shared/commit/f17bc42f9353e968c26af1a2949570aab88591b4) by [@liblaf](https://github.com/liblaf)
+- **pre-commit-autoupdate:** remove unnecessary permissions for approve job - [2292286](https://github.com/liblaf/copier-shared/commit/22922860ea71c5245092dbf84f5459fd3e64f489) by [@liblaf](https://github.com/liblaf)
 - improve MegaLinter configuration and permissions documentation - [566566b](https://github.com/liblaf/copier-shared/commit/566566b8bfffefbb350bfdfb64243d402b1c7580) by [@liblaf](https://github.com/liblaf)
 - add automated workflows for copier updates, merging, and reviews - [36d7ab7](https://github.com/liblaf/copier-shared/commit/36d7ab7f36e899cda1b0ce0a01d513f218c3973e) by [@liblaf](https://github.com/liblaf)
 - format commit author email in auto-copier-update workflow - [c42de50](https://github.com/liblaf/copier-shared/commit/c42de508e6d2ca5256da064d3702002ac10c24cc) by [@liblaf](https://github.com/liblaf)
