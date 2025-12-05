@@ -8,11 +8,8 @@ name: MegaLinter
 
 on:
   push:
-    branches-ignore:
-      - copier-update
-      - mega-linter-fix/**
-      - pre-commit-ci-update-config
-      - release-please--branches**
+    branches:
+      - main
   pull_request:
   workflow_dispatch:
 
