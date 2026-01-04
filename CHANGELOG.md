@@ -7,6 +7,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.5](https://github.com/liblaf/copier-shared/releases/tag/v0.1.5) - 2026-01-04
+
+### 🐛 Bug Fixes
+
+- **deps:** update GitHub Actions - [72ca141](https://github.com/liblaf/copier-shared/commit/72ca141446a1d52ac113b26eb5d52b7821865d1b) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf) made their first contribution
+- [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#35](https://github.com/liblaf/copier-shared/pull/35)
+- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#42](https://github.com/liblaf/copier-shared/pull/42)
+- [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci) made their first contribution in [#41](https://github.com/liblaf/copier-shared/pull/41)
+
 ## [0.1.3](https://github.com/liblaf/copier-shared/releases/tag/v0.1.3) - 2025-12-06
 
 ### ⚙️ Continuous Integration
