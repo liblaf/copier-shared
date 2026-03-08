@@ -7,6 +7,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.6](https://github.com/liblaf/copier-shared/releases/tag/v0.1.6) - 2026-03-02
+
+### 🐛 Bug Fixes
+
+- **pre-commit:** exclude lock files from large file check - [70cf603](https://github.com/liblaf/copier-shared/commit/70cf603dbb227a70f97039c233e0d5c7edaa847a) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci)
+- [@liblaf](https://github.com/liblaf)
+- [@liblaf[bot]](https://github.com/apps/liblaf)
+- [@renovate[bot]](https://github.com/apps/renovate)
+
 ## [0.1.5](https://github.com/liblaf/copier-shared/releases/tag/v0.1.5) - 2026-01-04
 
 ### 🐛 Bug Fixes
@@ -15,10 +28,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
-- [@liblaf](https://github.com/liblaf) made their first contribution
-- [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#35](https://github.com/liblaf/copier-shared/pull/35)
-- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#42](https://github.com/liblaf/copier-shared/pull/42)
-- [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci) made their first contribution in [#41](https://github.com/liblaf/copier-shared/pull/41)
+- [@liblaf[bot]](https://github.com/apps/liblaf)
+- [@liblaf](https://github.com/liblaf)
+- [@renovate[bot]](https://github.com/apps/renovate)
+- [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci)
 
 ## [0.1.3](https://github.com/liblaf/copier-shared/releases/tag/v0.1.3) - 2025-12-06
 
