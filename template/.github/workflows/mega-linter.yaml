@@ -11,16 +11,19 @@ on:
     branches:
       - main
   pull_request:
-  workflow_dispatch:
+    branches:
+      - main
 
 env:
   FORCE_COLOR: 1
+  GIT_COMMIT_MESSAGE: "chore(mega-linter): apply linters automatic fixes"
 
 jobs:
   mega-linter:
     name: MegaLinter
     permissions:
       contents: write
+      issues: write
       pull-requests: write
     runs-on: ubuntu-latest
     environment:
@@ -29,7 +32,7 @@ jobs:
     steps:
       - id: auth
         name: Auth
-        uses: actions/create-github-app-token@v3
+        uses: liblaf/actions/auth@v1
         with:
           app-id: ${{ vars.APP_ID }}
           private-key: ${{ secrets.PRIVATE_KEY }}
@@ -54,7 +57,25 @@ jobs:
         run: |-
           cp --target-directory='${{ runner.temp }}' --verbose 'megalinter-reports/megalinter-report.md'
           sudo rm --force --recursive 'mega-linter.log' 'megalinter-reports'
-      - name: autofix
-        uses: autofix-ci/action@v1
+      - if: steps.lint.outputs.has-updated-sources > 0 && github.ref == 'refs/heads/main'
+        name: Create PR
+        uses: peter-evans/create-pull-request@v8
         with:
-          commit-message: "chore(mega-linter): apply linters automatic fixes"
+          token: ${{ steps.auth.outputs.token }}
+          commit-message: ${{ env.GIT_COMMIT_MESSAGE }}
+          branch: mega-linter/${{ github.ref_name }}
+          sign-commits: true
+          title: ${{ env.GIT_COMMIT_MESSAGE }}
+          body-path: ${{ runner.temp }}/megalinter-report.md
+          labels: |-
+            automerge
+            mega-linter
+          assignees: ${{ github.repository_owner }}
+          reviewers: ${{ github.repository_owner }}
+      - if: steps.lint.outputs.has-updated-sources > 0 && github.ref != 'refs/heads/main'
+        name: Commit
+        uses: suzuki-shunsuke/commit-action@v0.1.1
+        with:
+          github_token: ${{ steps.auth.outputs.token }}
+          commit_message: ${{ env.GIT_COMMIT_MESSAGE }}
+          fail_on_self_push: false
