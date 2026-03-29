@@ -10,17 +10,13 @@ _envops:
 _jinja_extensions:
   - cookiecutter.extensions.SlugifyExtension
 
-_migrations:
-  - command: rm --force '.envrc'
-    version: v0.2.0
-  - command: rm --force '.github/renovate.json'
-    version: v0.2.0
-  - command: rm --force '.github/workflows/copier-update.yaml'
-    version: v0.2.3
-  - command: rm --force '.github/workflows/mega-linter.yaml'
-    version: v0.2.3
-
 _subdirectory: template
+
+_tasks:
+  - rm --force '.envrc'
+  - rm --force '.github/renovate.json'
+  - rm --force '.github/workflows/copier-update.yaml'
+  - rm --force '.github/workflows/mega-linter.yaml'
 
 project_name:
   type: str
