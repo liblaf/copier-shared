@@ -7,6 +7,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.1](https://github.com/liblaf/copier-shared/releases/tag/v0.2.1) - 2026-03-29
+
+### 🐛 Bug Fixes
+
+- **template:** update copier migration handling for v0.2.0 - [e0a8c58](https://github.com/liblaf/copier-shared/commit/e0a8c58fb0614b91d85ca95b855b8dd757b47460) by [@liblaf](https://github.com/liblaf)
+- **template:** remove legacy .envrc during migration - [af03a14](https://github.com/liblaf/copier-shared/commit/af03a14cce3e2405b87f779de7bc7b0815e27c63) by [@liblaf](https://github.com/liblaf)
+
+### ⚙️ Continuous Integration
+
+- **copier:** show update output in workflow runs - [95a1d8e](https://github.com/liblaf/copier-shared/commit/95a1d8e746396cc7cecd8af3f7c0dfcb250f0151) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf)
+
 ## [0.2.0](https://github.com/liblaf/copier-shared/releases/tag/v0.2.0) - 2026-03-29
 
 ### 💥 BREAKING CHANGES
@@ -21,6 +36,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please) made their first contribution in [#71](https://github.com/liblaf/copier-shared/pull/71)
 - [@liblaf](https://github.com/liblaf)
 
 ## [0.1.7](https://github.com/liblaf/copier-shared/releases/tag/v0.1.7) - 2026-03-29
