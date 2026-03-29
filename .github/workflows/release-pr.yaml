@@ -70,7 +70,7 @@ jobs:
         with:
           token: ${{ steps.auth.outputs.token }}
           commit-message: "chore(release): ${{ steps.version.outputs.tag }}"
-          branch: release-please
+          branch: release-please/${{ github.ref_name }}
           delete-branch: true
           sign-commits: true
           title: "chore(release): ${{ steps.version.outputs.tag }}"
