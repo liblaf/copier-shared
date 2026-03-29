@@ -7,7 +7,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.1.7](https://github.com/liblaf/copier-shared/releases/tag/v0.1.7) - 2026-03-28
+## [0.2.0](https://github.com/liblaf/copier-shared/releases/tag/v0.2.0) - 2026-03-29
+
+### 💥 BREAKING CHANGES
+
+- the template no longer ships
+  template/.github/renovate.json, so repositories must provide their own
+  Renovate configuration if they still rely on Renovate automation. - [2be70a5](https://github.com/liblaf/copier-shared/commit/2be70a5ffc13359f372c10eef00c7d1a06f80316) by [@liblaf](https://github.com/liblaf)
+
+### ⚙️ Continuous Integration
+
+- switch template automation to PR-based update flows - [2be70a5](https://github.com/liblaf/copier-shared/commit/2be70a5ffc13359f372c10eef00c7d1a06f80316) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf)
+
+## [0.1.7](https://github.com/liblaf/copier-shared/releases/tag/v0.1.7) - 2026-03-29
 
 ### ⚙️ Continuous Integration
 
@@ -16,9 +32,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf[bot]](https://github.com/apps/liblaf)
 - [@liblaf](https://github.com/liblaf)
 - [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci)
-- [@liblaf[bot]](https://github.com/apps/liblaf)
 
 ## [0.1.6](https://github.com/liblaf/copier-shared/releases/tag/v0.1.6) - 2026-03-08
 
