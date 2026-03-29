@@ -7,6 +7,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2.4](https://github.com/liblaf/copier-shared/releases/tag/v0.2.4) - 2026-03-29
+
+### ♻️ Code Refactoring
+
+- **(copier)** replace migrations with tasks - [8c61f8b](https://github.com/liblaf/copier-shared/commit/8c61f8b3c6f89b98a14b8a006714abf599dc7d16) by [@liblaf](https://github.com/liblaf)
+
+### ⚙️ Continuous Integrations
+
+- use copier recopy for shared template sync - [00f608d](https://github.com/liblaf/copier-shared/commit/00f608d9d9449f55f465f31cf0fde9de8252cbc1) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf)
+- [@renovate[bot]](https://github.com/apps/renovate)
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
+
 ## [v0.2.3](https://github.com/liblaf/copier-shared/releases/tag/v0.2.3) - 2026-03-29
 
 ### ⚙️ Continuous Integrations
