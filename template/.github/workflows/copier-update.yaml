@@ -41,7 +41,7 @@ jobs:
             find '.config/copier/' -iname '.copier-answers*' -type f -print0 |
               while IFS= read -r -d '' answers_file; do
                 echo "::group::$answers_file"
-                "${copier[@]}" update --skip-answered --trust --answers-file "$answers_file" --defaults --quiet
+                "${copier[@]}" update --skip-answered --trust --answers-file "$answers_file" --defaults
                 git add --all
                 if ! git diff --cached --quiet; then
                   git commit --message="chore(copier): update '$answers_file'"
