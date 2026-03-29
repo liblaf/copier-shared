@@ -7,7 +7,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.1.6](https://github.com/liblaf/copier-shared/releases/tag/v0.1.6) - 2026-03-02
+## [0.1.7](https://github.com/liblaf/copier-shared/releases/tag/v0.1.7) - 2026-03-28
+
+### ⚙️ Continuous Integration
+
+- **copier-update:** mark workflow file as generated - [a83e215](https://github.com/liblaf/copier-shared/commit/a83e21588b413203cd876b843ff69f6a643c7f29) by [@liblaf](https://github.com/liblaf)
+- **template:** automate copier updates and linter autofixes - [e2bc247](https://github.com/liblaf/copier-shared/commit/e2bc2478f4883565ab95fe0273af326aa6ee998d) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf)
+- [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci)
+- [@liblaf[bot]](https://github.com/apps/liblaf)
+
+## [0.1.6](https://github.com/liblaf/copier-shared/releases/tag/v0.1.6) - 2026-03-08
 
 ### 🐛 Bug Fixes
 
@@ -15,9 +28,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf[bot]](https://github.com/apps/liblaf)
 - [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci)
 - [@liblaf](https://github.com/liblaf)
-- [@liblaf[bot]](https://github.com/apps/liblaf)
 - [@renovate[bot]](https://github.com/apps/renovate)
 
 ## [0.1.5](https://github.com/liblaf/copier-shared/releases/tag/v0.1.5) - 2026-01-04
