@@ -15,6 +15,10 @@ _migrations:
     version: v0.2.0
   - command: rm --force '.github/renovate.json'
     version: v0.2.0
+  - command: rm --force '.github/workflows/copier-update.yaml'
+    version: v0.2.3
+  - command: rm --force '.github/workflows/mega-linter.yaml'
+    version: v0.2.3
 
 _subdirectory: template
 

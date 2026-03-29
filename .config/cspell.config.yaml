@@ -20,4 +20,4 @@ words:
   - mkdocs
   - pipx
   - pytest
-  - uuidgen
+  - taiki
