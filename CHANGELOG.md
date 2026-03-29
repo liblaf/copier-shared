@@ -7,6 +7,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2.3](https://github.com/liblaf/copier-shared/releases/tag/v0.2.3) - 2026-03-29
+
+### ⚙️ Continuous Integrations
+
+- add shared review workflows for automation - [8430a03](https://github.com/liblaf/copier-shared/commit/8430a03b7229b1ea18d40d6378ea1e176079d358) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf)
+- [@renovate[bot]](https://github.com/apps/renovate)
+
 ## [v0.2.2](https://github.com/liblaf/copier-shared/releases/tag/v0.2.2) - 2026-03-29
 
 ### ⚙️ Continuous Integrations
@@ -15,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@liblaf](https://github.com/liblaf)
 - [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
 
