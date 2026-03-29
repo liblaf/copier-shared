@@ -6,67 +6,46 @@ _answers_file: .config/copier/.copier-answers.shared.yaml
 
 _envops:
   comment_start_string: "# {#"
-  line_statement_prefix: "# %%"
 
 _jinja_extensions:
   - cookiecutter.extensions.SlugifyExtension
 
-_migrations: &migrations
-  - rm --force --verbose '.github/.mega-linter.yaml'
-  - rm --force --verbose '.github/copier/.copier-answers.share.yaml'
-  - rm --force --verbose '.github/copier/.copier-answers.shared.yaml'
-  - rm --force --verbose '.github/workflows/auto-copier-update.yaml'
-  - rm --force --verbose '.github/workflows/auto-label-sync.yaml'
-  - rm --force --verbose '.github/workflows/auto-merge.yaml'
-  - rm --force --verbose '.github/workflows/auto-pr.yaml'
-  - rm --force --verbose '.github/workflows/auto-repo.yaml'
-  - rm --force --verbose '.github/workflows/auto-review.yaml'
-  - rm --force --verbose '.github/workflows/megalinter.yaml'
-  - rm --force --verbose '.github/workflows/pr.yaml'
-  - rm --force --verbose '.github/workflows/repo.yaml'
-  - rm --force --verbose '.github/workflows/shared-mega-linter.yaml'
-  - rm --force --verbose '.github/workflows/shared-pr.yaml'
-  - rm --force --verbose '.github/workflows/shared-repo.yaml'
+_migrations:
+  - command: rm --force '.github/renovate.json'
+    version: v0.2.0
 
 _subdirectory: template
 
-_tasks: *migrations
-
 project_name:
   type: str
-  help: Project Name, e.g. "Grapes"
+  help: The project name, for example "Grapes".
 
 project_name_slug:
   type: str
-  help: project-name-slug, e.g. "grapes"
+  help: A lowercase, URL-friendly project slug, for example "grapes".
   default: "{{ project_name | slugify }}"
 
 author_name:
   type: str
-  help: author name
+  help: The author's name.
   default: liblaf
 
 author_email:
   type: str
-  help: author email
+  help: The author's email address.
   default: 30631553+liblaf@users.noreply.github.com
 
 license:
   type: str
-  help: license
-  choices:
-    MIT License:
-      value: MIT
-    Other:
-      value: other
+  help: The project's license.
   default: MIT
 
 github_user:
   type: str
-  help: GitHub username
+  help: The GitHub username or organization name.
   default: "{{ author_name }}"
 
 github_repo:
   type: str
-  help: GitHub repository name
+  help: The GitHub repository name.
   default: "{{ project_name_slug }}"
