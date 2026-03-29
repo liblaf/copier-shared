@@ -7,6 +7,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2.2](https://github.com/liblaf/copier-shared/releases/tag/v0.2.2) - 2026-03-29
+
+### ⚙️ Continuous Integrations
+
+- capitalize copier update workflow names - [7310c32](https://github.com/liblaf/copier-shared/commit/7310c324d65cd85d7f7526329537bfdb1a93393d) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf)
+- [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
+
 ## [v0.2.1](https://github.com/liblaf/copier-shared/releases/tag/v0.2.1) - 2026-03-29
 
 ### 🐛 Bug Fixes
@@ -20,6 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier) made their first contribution in [#73](https://github.com/liblaf/copier-shared/pull/73)
 - [@liblaf](https://github.com/liblaf)
 
