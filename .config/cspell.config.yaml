@@ -15,6 +15,7 @@ useGitignore: true
 words:
   - direnv
   - envops
+  - envrc
   - liblaf
   - mkdocs
   - pipx

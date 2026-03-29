@@ -11,6 +11,8 @@ _jinja_extensions:
   - cookiecutter.extensions.SlugifyExtension
 
 _migrations:
+  - command: rm --force '.envrc'
+    version: v0.2.0
   - command: rm --force '.github/renovate.json'
     version: v0.2.0
 
