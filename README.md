@@ -1,67 +1,93 @@
-<div align="center"><a name="readme-top"></a>
+<div align="center">
 
 ![copier-shared](https://socialify.git.ci/liblaf/copier-shared/image?description=1&forks=1&issues=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fcopier-org%2Fcopier%2Frefs%2Fheads%2Fmaster%2Fimg%2Flogo.svg&name=1&owner=1&pattern=Transparent&pulls=1&stargazers=1&theme=Auto)
 
 [![Made with Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-black.json)](https://github.com/copier-org/copier)
+[![Shared / Copier Update](https://github.com/liblaf/copier-shared/actions/workflows/shared-copier-update.yaml/badge.svg)](https://github.com/liblaf/copier-shared/actions/workflows/shared-copier-update.yaml)
+[![Shared / MegaLinter](https://github.com/liblaf/copier-shared/actions/workflows/shared-mega-linter.yaml/badge.svg)](https://github.com/liblaf/copier-shared/actions/workflows/shared-mega-linter.yaml)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/liblaf/copier-shared/main.svg)](https://results.pre-commit.ci/latest/github/liblaf/copier-shared/main)
 
-[Changelog](https://github.com/liblaf/copier-shared/blob/main/CHANGELOG.md) · [Report Bug](https://github.com/liblaf/copier-shared/issues) · [Request Feature](https://github.com/liblaf/copier-shared/issues)
+[Changelog](https://github.com/liblaf/copier-shared/blob/main/CHANGELOG.md) · [Issues](https://github.com/liblaf/copier-shared/issues) · [Pull Requests](https://github.com/liblaf/copier-shared/pulls) · [Copier Docs](https://copier.readthedocs.io/)
 
-![](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+![Rule](https://cdn.jsdelivr.net/gh/andreasbm/readme/assets/lines/rainbow.png)
 
 </div>
 
-## ✨ Features
+## 👋 About
 
-- 🔧 **Automated Project Setup:** Quickly generate new projects with standardized configurations using Copier templates, reducing manual setup time and ensuring consistency;
-- 🧹 **Code Quality Enforcement:** Integrated pre-commit hooks with Ruff, Biome, and DVC to automatically check and format code before commits, maintaining high code standards;
-- 📦 **Dependency Management:** Automated dependency updates through Renovate bot and mise environment management, keeping projects secure and up-to-date;
-- 🚀 **CI/CD Ready:** Pre-configured GitHub Actions workflows for MegaLinter and pre-commit autoupdate, enabling seamless continuous integration and deployment;
-- 🎯 **Consistent Environments:** Standardized development environments using direnv and mise configurations, ensuring reproducibility across different setups;
-- 📝 **Smart Templating:** Flexible Copier configuration with intelligent migrations and answers management, allowing easy customization while maintaining template integrity.
+`copier-shared` is the maintenance layer for a repository. It is a
+[Copier](https://github.com/copier-org/copier) template that adds the boring
+but valuable parts of project hygiene for you: shared pre-commit hooks,
+automation workflows, and a committed answers file so the template can be
+re-applied later without guesswork.
 
-## 📦 Installation
+## ✨ What You Get
 
-To install `gh:liblaf/copier-shared`, run the following command:
+- 🪝 A generated `.pre-commit-config.yaml` with Ruff, Biome,
+  `dotenv-linter`, `shellcheck`, `rumdl`, and the standard pre-commit safety
+  hooks.
+- 🤖 Three GitHub Actions workflows for weekly Copier refresh PRs,
+  MegaLinter autofix PRs, and scheduled review runs.
+- 🧾 A generated answers file at `.config/copier/.copier-answers.shared.yaml`
+  so updates stay reproducible.
+- 🧹 Cleanup tasks that remove older shared files like `.envrc`, legacy
+  Renovate config, and retired workflow names when the template is refreshed.
+- 🧩 A small prompt surface: project name, slug, author, email, license,
+  GitHub owner, and repository name.
+
+## 🚀 Use It
 
 ```bash
 copier copy --trust gh:liblaf/copier-shared .
 ```
 
-## ⌨️ Local Development
+Copier will ask for the project metadata it needs, then generate the shared
+files in your repository.
 
-You can use Github Codespaces for online development:
+## 📦 Generated Files
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/liblaf/copier-shared)
+| Path | Why it exists |
+| ---- | ------------- |
+| `.config/copier/.copier-answers.shared.yaml` | Saves the answers used to apply the template. |
+| `.config/rumdl.toml` | Keeps Markdown linting rules aligned across repos. |
+| `.pre-commit-config.yaml` | Installs the shared formatting, linting, and safety hooks. |
+| `.github/workflows/shared-copier-update.yaml` | Opens a weekly PR with the latest template changes. |
+| `.github/workflows/shared-mega-linter.yaml` | Runs MegaLinter and opens an autofix PR when possible. |
+| `.github/workflows/shared-review.yaml` | Runs scheduled review jobs for automation PRs. |
 
-Or clone it for local development:
+## 🔄 Update An Existing Repo
+
+The answers file is committed on purpose. To re-apply the template locally, run:
+
+```bash
+copier recopy --trust --answers-file .config/copier/.copier-answers.shared.yaml
+```
+
+The bundled `Shared / Copier Update` workflow follows the same approach on a weekly schedule and turns the result into a pull request.
+
+## 🛠️ Work On The Template
 
 ```bash
 git clone https://github.com/liblaf/copier-shared.git
 cd copier-shared
 ```
 
+- 🧱 Edit `template/` when you want to change the files generated in downstream
+  repositories.
+- ⚙️ Edit `copier.yaml` when you want to change prompts, defaults, or cleanup
+  tasks.
+- 🧪 Re-run Copier against a scratch repository to verify the generated output
+  before publishing a new tag.
+
 ## 🤝 Contributing
 
-Contributions of all types are more than welcome, if you are interested in contributing code, feel free to check out our GitHub [Issues](https://github.com/liblaf/copier-shared/issues) to get stuck in to show us what you're made of.
-
-[![PR Welcome](https://img.shields.io/badge/%F0%9F%A4%AF%20PR%20WELCOME-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge)](https://github.com/liblaf/copier-shared/pulls)
-
-[![Contributors](https://contrib.nn.ci/api?repo=liblaf/copier-shared)](https://github.com/liblaf/copier-shared/graphs/contributors)
-
-## 🔗 More Copier Templates
-
-<!-- tangerine-start: projects/copier.md -->
-
-- **[Shared](https://github.com/liblaf/copier-shared)** - ✨ Automated code quality and maintenance for your projects: A Copier template with pre-commit hooks, MegaLinter, and auto-update workflows.
-- **[Release](https://github.com/liblaf/copier-release)** - 🚀 Automated release management with Copier and Release Please
-- **[Python](https://github.com/liblaf/copier-shared)** - 🐍 A modern Copier template for Python projects. Pre-configured with mise, ruff, pytest, mkdocs, and GitHub Actions workflows for seamless development.
-- **[Rust](https://github.com/liblaf/copier-rust)** - 🦀 Copier template for Rust projects with cross-compilation, CI/CD, and release automation
-- **[TypeScript](https://github.com/liblaf/copier-typescript)** - 🚀 Kickstart your TypeScript project with modern tools like Bun, Biome, and automated CI/CD workflows.
-<!-- tangerine-end -->
+Issues and pull requests are welcome. If you want to improve the shared
+defaults, tighten automation, or simplify the update story, this repo is the
+right place to do it.
 
 ---
 
 #### 📝 License
 
 Copyright © 2024 [liblaf](https://github.com/liblaf). <br />
-This project is [MIT](https://github.com/liblaf/copier-shared/blob/main/LICENSE) licensed.
+This project is licensed under the [MIT License](./LICENSE).
