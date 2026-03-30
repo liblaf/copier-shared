@@ -51,6 +51,7 @@ jobs:
           token: ${{ steps.auth.outputs.token }}
           commit-message: "chore(copier): update from template"
           branch: copier-update/${{ github.ref_name }}
+          delete-branch: true
           sign-commits: true
           title: "chore(copier): update from template"
           body: Automated changes by [${{ github.workflow }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) Workflow
