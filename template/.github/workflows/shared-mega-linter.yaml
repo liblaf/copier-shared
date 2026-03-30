@@ -42,9 +42,10 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
       - id: lint
         name: MegaLinter
-        uses: liblaf/actions/mega-linter@1f83732587ff97f1babbe9218fdc5436dda1a16f # v1
-        with:
-          token: ${{ steps.auth.outputs.token }}
+        uses: liblaf/megalinter-custom-flavor-all@main
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          MEGALINTER_CONFIG: https://raw.githubusercontent.com/liblaf/megalinter-custom-flavor-all/refs/heads/main/.mega-linter.yml
       - if: success() || failure()
         name: Upload reports
         uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7

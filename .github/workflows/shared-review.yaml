@@ -5,8 +5,12 @@ name: Shared / Review
 
 on:
   schedule:
-    - cron: "0 0 * * 0" # Runs at 00:00, only on Sunday
+    # Run on Sunday at 04:00 to allow other weekly workflows to complete first
+    - cron: "0 4 * * 0"
   workflow_dispatch:
+
+env:
+  FORCE_COLOR: 1
 
 jobs:
   review:
