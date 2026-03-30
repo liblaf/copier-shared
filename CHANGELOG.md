@@ -7,6 +7,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2.5](https://github.com/liblaf/copier-shared/releases/tag/v0.2.5) - 2026-03-30
+
+### ♻️ Code Refactoring
+
+- **(template)** simplify pre-commit config generation - [b14297d](https://github.com/liblaf/copier-shared/commit/b14297d3e1cb300c9e5558f6b7313cc58c84d9eb) by [@liblaf](https://github.com/liblaf)
+
+### ⚙️ Continuous Integrations
+
+- **(pre-commit)** skip dotenv-linter in pre-commit.ci - [518da40](https://github.com/liblaf/copier-shared/commit/518da4064259ca0493324d24ac9a88896aa7957d) by [@liblaf](https://github.com/liblaf)
+- **(review)** delay weekly review workflow schedule - [385638f](https://github.com/liblaf/copier-shared/commit/385638f3abd025a94c8a17c9c60c883613b5dad4) by [@liblaf](https://github.com/liblaf)
+- **(workflows)** delete update branches after merge - [df1a134](https://github.com/liblaf/copier-shared/commit/df1a1347bafb2d2aef61988debff3864293f74fb) by [@liblaf](https://github.com/liblaf)
+- update shared review and linter workflows - [b1fec68](https://github.com/liblaf/copier-shared/commit/b1fec681fdbc102a91ef371ea76ce5fd3e79c20c) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+- [@liblaf](https://github.com/liblaf)
+- [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
+
 ## [v0.2.4](https://github.com/liblaf/copier-shared/releases/tag/v0.2.4) - 2026-03-29
 
 ### ♻️ Code Refactoring
@@ -19,9 +38,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@liblaf](https://github.com/liblaf)
 - [@renovate[bot]](https://github.com/apps/renovate)
-- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 
 ## [v0.2.3](https://github.com/liblaf/copier-shared/releases/tag/v0.2.3) - 2026-03-29
 
