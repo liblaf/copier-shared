@@ -7,6 +7,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2.6](https://github.com/liblaf/copier-shared/releases/tag/v0.2.6) - 2026-03-30
+
+### 📝 Documentation
+
+- refresh README and align markdown lint rules - [fa410dc](https://github.com/liblaf/copier-shared/commit/fa410dc0e905cde81f082e4d17c4bcba9a26a406) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
+- [@liblaf](https://github.com/liblaf)
+
 ## [v0.2.5](https://github.com/liblaf/copier-shared/releases/tag/v0.2.5) - 2026-03-30
 
 ### ♻️ Code Refactoring
@@ -22,6 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@renovate[bot]](https://github.com/apps/renovate)
 - [@liblaf](https://github.com/liblaf)
 - [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
