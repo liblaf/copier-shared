@@ -13,9 +13,13 @@ ci:
   autoupdate_commit_msg: |-
     chore(pre-commit): pre-commit autoupdate
   skip:
-    # Skip biome-check in CI since `biome.jsonc` may extend from an NPM package,
-    # and `additional_dependencies` won't work in the CI environment.
+    # Skip biome-check in CI because `biome.jsonc` may extend from an NPM
+    # package, and the `additional_dependencies` configuration option is not
+    # supported in the CI environment.
     - biome-check
+    # Skip dotenv-linter in CI because pre-commit.ci does not support
+    # Docker-based hooks.
+    - dotenv-linter
 
 repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
