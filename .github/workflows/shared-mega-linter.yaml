@@ -68,6 +68,7 @@ jobs:
           token: ${{ steps.auth.outputs.token }}
           commit-message: ${{ env.GIT_COMMIT_MESSAGE }}
           branch: mega-linter/${{ github.head_ref || github.ref_name }}
+          delete-branch: true
           sign-commits: true
           title: ${{ env.GIT_COMMIT_MESSAGE }}
           body-path: ${{ runner.temp }}/megalinter-report.md
