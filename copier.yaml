@@ -10,6 +10,7 @@ _jinja_extensions:
 _subdirectory: template
 
 _tasks:
+  - rm --force '.config/mise/conf.d/10-shared.toml'
   - rm --force '.envrc'
   - rm --force '.github/renovate.json'
   - rm --force '.github/workflows/copier-update.yaml'
