@@ -8,6 +8,9 @@ on:
     - cron: "0 0 * * 0" # Runs at 00:00, only on Sunday
   workflow_dispatch:
 
+env:
+  FORCE_COLOR: 1
+
 jobs:
   review:
     name: Review
