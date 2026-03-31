@@ -7,6 +7,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2.7](https://github.com/liblaf/copier-shared/releases/tag/v0.2.7) - 2026-03-31
+
+### ⚙️ Continuous Integrations
+
+- **(mega-linter)** use auth step token for MegaLinter - [498031c](https://github.com/liblaf/copier-shared/commit/498031c1a70769bdb6eed6fa552cf6e5ca538951) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf)
+- [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
+
 ## [v0.2.6](https://github.com/liblaf/copier-shared/releases/tag/v0.2.6) - 2026-03-30
 
 ### 📝 Documentation
@@ -15,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
 - [@liblaf](https://github.com/liblaf)
 
