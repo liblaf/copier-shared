@@ -7,6 +7,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2.9](https://github.com/liblaf/copier-shared/releases/tag/v0.2.9) - 2026-04-05
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** pin dependencies (#97) - [02c209e](https://github.com/liblaf/copier-shared/commit/02c209ee519675c6d84f6901c0bcc7142ec31c48) by [@renovate[bot]](https://github.com/apps/renovate) in [#97](https://github.com/liblaf/copier-shared/pull/97)
+- replace review automation with approve workflow - [a1a3288](https://github.com/liblaf/copier-shared/commit/a1a32886bcad324698ac4680b348179f207aaaff) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+- [@liblaf](https://github.com/liblaf)
+- [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
+
 ## [v0.2.8](https://github.com/liblaf/copier-shared/releases/tag/v0.2.8) - 2026-03-31
 
 ### 🐛 Bug Fixes
@@ -15,6 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@liblaf](https://github.com/liblaf)
 
 ## [v0.2.7](https://github.com/liblaf/copier-shared/releases/tag/v0.2.7) - 2026-03-31
