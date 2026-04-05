@@ -15,6 +15,7 @@ _tasks:
   - rm --force '.github/renovate.json'
   - rm --force '.github/workflows/copier-update.yaml'
   - rm --force '.github/workflows/mega-linter.yaml'
+  - rm --force '.github/workflows/shared-review.yaml'
 
 project_name:
   type: str

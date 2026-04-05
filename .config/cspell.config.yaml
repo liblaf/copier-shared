@@ -14,11 +14,8 @@ maxFileSize: 500KB
 useGitignore: true
 words:
   - direnv
-  - dotenv
   - envrc
   - liblaf
-  - mkdocs
   - pipx
-  - pytest
   - rumdl
   - taiki
