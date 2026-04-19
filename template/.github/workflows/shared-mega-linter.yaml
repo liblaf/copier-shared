@@ -41,7 +41,7 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
       - id: lint
         name: MegaLinter
-        uses: liblaf/megalinter-custom-flavor-all@d5d8955eb5e4499d6b140a7695cf6dbb3cbd7264 # main
+        uses: liblaf/megalinter-custom-flavor-all@7917b6c7a285b457d1053d1ac6093101d68cbe17 # main
         env:
           GITHUB_TOKEN: ${{ steps.auth.outputs.token }}
           MEGALINTER_CONFIG: https://raw.githubusercontent.com/liblaf/megalinter-custom-flavor-all/refs/heads/main/.mega-linter.yml
