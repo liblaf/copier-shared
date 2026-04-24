@@ -7,15 +7,44 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2.10](https://github.com/liblaf/copier-shared/releases/tag/v0.2.10) - 2026-04-24
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to 8674331 (#100) - [9b8695c](https://github.com/liblaf/copier-shared/commit/9b8695cc6cd3962b95e126011fc78102bf670791) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to bd05e56 (#103) - [8fa184b](https://github.com/liblaf/copier-shared/commit/8fa184b1a2cf8dce64d11e7eb46331e66ced13d9) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to 936432c (#104) - [9153bfb](https://github.com/liblaf/copier-shared/commit/9153bfbff603366eb26d7ae08f862b0bd3fd0319) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to 2e0f440 (#105) - [5422c57](https://github.com/liblaf/copier-shared/commit/5422c5704a858c606fee4d151b08c7a85ad8af48) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to 86f86a9 (#106) - [23a69c1](https://github.com/liblaf/copier-shared/commit/23a69c1732e17b49928c2ab44d9de27c25202de6) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update actions/upload-artifact digest to 043fb46 (#107) - [f3142cd](https://github.com/liblaf/copier-shared/commit/f3142cdf804e0ea5b4d22a411f2770e18d3d741a) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update peter-evans/create-pull-request digest to 5f6978f (#108) - [3f5a538](https://github.com/liblaf/copier-shared/commit/3f5a538a7e390703018b1d156241ec0d99623a05) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to d5d8955 (#109) - [764e19f](https://github.com/liblaf/copier-shared/commit/764e19f6fbabc330732bc3b8bc002be00ddc1115) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to 7917b6c (#110) - [4a8f4f4](https://github.com/liblaf/copier-shared/commit/4a8f4f4a429a44c4f1dce9e1e9deb1020921a10d) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to 55e963b (#111) - [6c39cfe](https://github.com/liblaf/copier-shared/commit/6c39cfe15137404a3ba6d61fec9f811121e1eb6a) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to b230679 (#112) - [55f02c4](https://github.com/liblaf/copier-shared/commit/55f02c4949bd12fa6c1f411aee6996067faa337b) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to eead699 (#113) - [8b649d2](https://github.com/liblaf/copier-shared/commit/8b649d29b56a58902a1053d9341137025f8d99b2) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to a030902 (#114) - [e051428](https://github.com/liblaf/copier-shared/commit/e0514280e29e5233acfcabeec664478a0418e149) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to a3bbe7c (#115) - [2ee7f06](https://github.com/liblaf/copier-shared/commit/2ee7f0631f8adc1643ee0cfaccdd0c9c3267c414) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/actions digest to 30c85b7 (#91) - [88de14a](https://github.com/liblaf/copier-shared/commit/88de14a459d3aba0f87ed99d23bcc279591be833) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to e4ff373 (#116) - [c47f73a](https://github.com/liblaf/copier-shared/commit/c47f73a3a5c27dec657b3f6cc874989f7c6ee1a5) by [@renovate[bot]](https://github.com/apps/renovate)
+- add custom approval workflow for pre-commit.ci PRs - [c2e293e](https://github.com/liblaf/copier-shared/commit/c2e293e58e4bd1002da3c01cfa527b8863e588b0) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+- [@liblaf](https://github.com/liblaf)
+- [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
+
 ## [v0.2.9](https://github.com/liblaf/copier-shared/releases/tag/v0.2.9) - 2026-04-05
 
 ### ⚙️ Continuous Integrations
 
-- **(deps)** pin dependencies (#97) - [02c209e](https://github.com/liblaf/copier-shared/commit/02c209ee519675c6d84f6901c0bcc7142ec31c48) by [@renovate[bot]](https://github.com/apps/renovate) in [#97](https://github.com/liblaf/copier-shared/pull/97)
+- **(deps)** pin dependencies (#97) - [02c209e](https://github.com/liblaf/copier-shared/commit/02c209ee519675c6d84f6901c0bcc7142ec31c48) by [@renovate[bot]](https://github.com/apps/renovate)
 - replace review automation with approve workflow - [a1a3288](https://github.com/liblaf/copier-shared/commit/a1a32886bcad324698ac4680b348179f207aaaff) by [@liblaf](https://github.com/liblaf)
 
 ### ❤️ Contributors
 
+- [@github-actions[bot]](https://github.com/apps/github-actions) made their first contribution in [#98](https://github.com/liblaf/copier-shared/pull/98)
 - [@renovate[bot]](https://github.com/apps/renovate)
 - [@liblaf](https://github.com/liblaf)
 - [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
