@@ -20,14 +20,14 @@ ci:
 
 repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.15.8
+    rev: v0.15.11
     hooks:
       - id: ruff-check
         args:
           - --fix
       - id: ruff-format
   - repo: https://github.com/biomejs/pre-commit
-    rev: v2.4.9
+    rev: v2.4.13
     hooks:
       - id: biome-check
         exclude: \.jsonc?$
@@ -46,8 +46,12 @@ repos:
       - id: fix-byte-order-marker
       - id: mixed-line-ending
       - id: trailing-whitespace
+  - repo: https://github.com/rhysd/actionlint
+    rev: v1.7.12
+    hooks:
+      - id: actionlint
   - repo: https://github.com/rvben/rumdl-pre-commit
-    rev: v0.1.62
+    rev: v0.1.80
     hooks:
       - id: rumdl-fmt
   - repo: https://github.com/shellcheck-py/shellcheck-py
