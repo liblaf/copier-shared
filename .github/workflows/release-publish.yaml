@@ -20,10 +20,10 @@ jobs:
     steps:
       - id: auth
         name: Auth
-        uses: liblaf/actions/auth@1f83732587ff97f1babbe9218fdc5436dda1a16f # v1
+        uses: liblaf/actions/auth@d510a5eaa5206b30ed1009660d04ef8082daf2d9 # v2
         with:
-          app-id: ${{ vars.APP_ID }}
-          private-key: ${{ secrets.PRIVATE_KEY }}
+          client-id: ${{ vars.APP_CLIENT_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Publish drafts
         uses: liblaf/actions/publish-drafts@1f83732587ff97f1babbe9218fdc5436dda1a16f # v1
         with:

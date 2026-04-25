@@ -33,10 +33,10 @@ jobs:
     steps:
       - id: auth
         name: Auth
-        uses: liblaf/actions/auth@30c85b7c83d5db558c3113c5a7297837f6fe4904 # v1
+        uses: liblaf/actions/auth@d510a5eaa5206b30ed1009660d04ef8082daf2d9 # v2
         with:
-          app-id: ${{ vars.APP_ID }}
-          private-key: ${{ secrets.PRIVATE_KEY }}
+          client-id: ${{ vars.APP_CLIENT_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
       - id: lint
@@ -60,7 +60,10 @@ jobs:
           cp --target-directory='${{ runner.temp }}' --verbose 'megalinter-reports/megalinter-report.md'
           sudo rm --force --recursive 'mega-linter.log' 'megalinter-reports'
       - id: pr
-        if: steps.lint.outputs.has-updated-sources == 1 && (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository)
+        if: >-
+          steps.lint.outputs.has-updated-sources == 1 && (github.event_name ==
+          'push' || github.event.pull_request.head.repo.full_name ==
+          github.repository)
         name: Create PR
         uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8
         with:
@@ -90,12 +93,12 @@ jobs:
     steps:
       - id: auth
         name: Auth
-        uses: liblaf/actions/auth@30c85b7c83d5db558c3113c5a7297837f6fe4904 # v1
+        uses: liblaf/actions/auth@d510a5eaa5206b30ed1009660d04ef8082daf2d9 # v2
         with:
-          app-id: ${{ vars.APP_ID }}
-          private-key: ${{ secrets.PRIVATE_KEY }}
+          client-id: ${{ vars.APP_CLIENT_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Approve
-        uses: liblaf/actions/approve@30c85b7c83d5db558c3113c5a7297837f6fe4904 # v1
+        uses: liblaf/actions/approve@d510a5eaa5206b30ed1009660d04ef8082daf2d9 # v2
         with:
           approve-token: ${{ steps.auth.outputs.token }}
           pull: ${{ needs.mega-linter.outputs.pull-request-url }}
