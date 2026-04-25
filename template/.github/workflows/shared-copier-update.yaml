@@ -25,10 +25,10 @@ jobs:
     steps:
       - id: auth
         name: Auth
-        uses: liblaf/actions/auth@30c85b7c83d5db558c3113c5a7297837f6fe4904 # v1
+        uses: liblaf/actions/auth@d510a5eaa5206b30ed1009660d04ef8082daf2d9 # v2
         with:
-          app-id: ${{ vars.APP_ID }}
-          private-key: ${{ secrets.PRIVATE_KEY }}
+          client-id: ${{ vars.APP_CLIENT_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
       - name: Copier update
@@ -54,7 +54,10 @@ jobs:
           delete-branch: true
           sign-commits: true
           title: "chore(copier): update from template"
-          body: Automated changes by [${{ github.workflow }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) Workflow
+          body: >-
+            Automated changes by [${{ github.workflow }}](${{ github.server_url
+            }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            Workflow
           labels: |-
             automerge
             copier
