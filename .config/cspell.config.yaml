@@ -17,6 +17,8 @@ words:
   - envrc
   - liblaf
   - mkdocs
+  - oxfmt
+  - oxlint
   - pipx
   - rumdl
   - taiki
