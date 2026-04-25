@@ -31,20 +31,12 @@ jobs:
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+      - name: Install mise
+        uses: jdx/mise-action@1648a7812b9aeae629881980618f079932869151 # v4
+      - name: Install Copier
+        run: pipx install --pip-args cookiecutter copier
       - name: Copier update
-        # Note: Using `copier recopy --force` instead of `copier update` because
-        # recopy with --force ensures all template files are synchronized with
-        # the latest version, avoiding merge conflicts that update might create.
-        run: |-
-          copier=(pipx run --pip-args cookiecutter copier)
-          if [[ -d '.config/copier/' ]]; then
-            find '.config/copier/' -iname '.copier-answers*' -type f -print0 |
-              while IFS= read -r -d '' answers_file; do
-                echo "::group::$answers_file"
-                "${copier[@]}" recopy --skip-answered --trust --answers-file "$answers_file" --force
-                echo '::endgroup::'
-              done
-          fi
+        run: mise run copier-update --skip-answered --trust --force
       - name: Create PR
         uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8
         with:
