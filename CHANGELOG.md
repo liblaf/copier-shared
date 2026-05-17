@@ -7,6 +7,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2.13](https://github.com/liblaf/copier-shared/releases/tag/v0.2.13) - 2026-05-17
+
+### ✨ Features
+
+- **(ci)** bump liblaf/actions to v3 and add reviewer input - [0b1896e](https://github.com/liblaf/copier-shared/commit/0b1896e46c393e6a6214420cc23c47f8f6c96e40) by [@liblaf](https://github.com/liblaf)
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to b7044af (#120) - [8c5971a](https://github.com/liblaf/copier-shared/commit/8c5971a3efa928e6e2d06991ca6295d7d9a2e5d2) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to 1f661b2 (#124) - [c85bf5d](https://github.com/liblaf/copier-shared/commit/c85bf5dd7bb606867374556f8cc63f8700be6769) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/actions action to v3 (#122) - [d0e9c66](https://github.com/liblaf/copier-shared/commit/d0e9c66090694bd56890154eb5e801baed2f7770) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+- [@liblaf](https://github.com/liblaf)
+
 ## [v0.2.12](https://github.com/liblaf/copier-shared/releases/tag/v0.2.12) - 2026-04-25
 
 ### ⚙️ Continuous Integrations
@@ -15,6 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@github-actions[bot]](https://github.com/apps/github-actions)
 - [@liblaf](https://github.com/liblaf)
 
 ## [v0.2.11](https://github.com/liblaf/copier-shared/releases/tag/v0.2.11) - 2026-04-25
