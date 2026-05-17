@@ -7,6 +7,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2.14](https://github.com/liblaf/copier-shared/releases/tag/v0.2.14) - 2026-05-17
+
+### 🛠 Builds
+
+- **(pre-commit)** update hook versions - [7389d92](https://github.com/liblaf/copier-shared/commit/7389d92b056ad422a1d7ace4d51f5d231daf6a68) by [@liblaf](https://github.com/liblaf)
+
+### ⚙️ Continuous Integrations
+
+- set custom approve reviewer from auth output - [0cddee8](https://github.com/liblaf/copier-shared/commit/0cddee8928b1f9a763e32ba5a911e01af66fb9b4) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf)
+
 ## [v0.2.13](https://github.com/liblaf/copier-shared/releases/tag/v0.2.13) - 2026-05-17
 
 ### ✨ Features
@@ -21,6 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@renovate[bot]](https://github.com/apps/renovate)
 - [@liblaf](https://github.com/liblaf)
 
