@@ -37,3 +37,4 @@ jobs:
           app: pre-commit-ci
           approve-token: ${{ steps.auth.outputs.token }}
           label: automerge
+          reviewer: ${{ steps.auth.outputs.committer-name }}
