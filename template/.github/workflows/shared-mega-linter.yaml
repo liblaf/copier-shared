@@ -38,7 +38,7 @@ jobs:
           client-id: ${{ vars.APP_CLIENT_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Checkout
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
       - id: lint
         name: MegaLinter
         uses: liblaf/megalinter-custom-flavor-all@5a7dbc7a16f4fd5defd46fcfcc5726c21eaa74a3 # main
