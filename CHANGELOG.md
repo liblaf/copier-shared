@@ -7,6 +7,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2.16](https://github.com/liblaf/copier-shared/releases/tag/v0.2.16) - 2026-06-07
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to 5a7dbc7 (#129) - [a63a3c2](https://github.com/liblaf/copier-shared/commit/a63a3c212708a3beb5970d2ee61f637eed0a2926) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update actions/checkout digest to df4cb1c (#131) - [95822d6](https://github.com/liblaf/copier-shared/commit/95822d696c52193925598bd38ab1335d79cb55db) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to d2dc542 (#132) - [12c6589](https://github.com/liblaf/copier-shared/commit/12c6589210b74a5301db671b384d3ac5bb17f08e) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update jdx/mise-action digest to dba1968 (#133) - [d7af5b9](https://github.com/liblaf/copier-shared/commit/d7af5b9639964ebd3420b0689e83daa5e39a6c9b) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to 82067c2 (#134) - [5f1d608](https://github.com/liblaf/copier-shared/commit/5f1d6089ca787cc9dc2c54945adfb55b33fc9597) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to f0a990f (#135) - [6ca7794](https://github.com/liblaf/copier-shared/commit/6ca7794dc6330cd4135c53fa257ee6b6e41320cd) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf)
+- [@renovate[bot]](https://github.com/apps/renovate)
+
 ## [v0.2.15](https://github.com/liblaf/copier-shared/releases/tag/v0.2.15) - 2026-05-24
 
 ### ⚙️ Continuous Integrations
@@ -16,6 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@liblaf](https://github.com/liblaf)
 - [@renovate[bot]](https://github.com/apps/renovate)
 
@@ -234,8 +251,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 💥 BREAKING CHANGES
 
 - the template no longer ships
-  template/.github/renovate.json, so repositories must provide their own
-  Renovate configuration if they still rely on Renovate automation. - [2be70a5](https://github.com/liblaf/copier-shared/commit/2be70a5ffc13359f372c10eef00c7d1a06f80316) by [@liblaf](https://github.com/liblaf)
+template/.github/renovate.json, so repositories must provide their own
+Renovate configuration if they still rely on Renovate automation. - [2be70a5](https://github.com/liblaf/copier-shared/commit/2be70a5ffc13359f372c10eef00c7d1a06f80316) by [@liblaf](https://github.com/liblaf)
 
 ### ⚙️ Continuous Integrations
 
