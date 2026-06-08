@@ -25,11 +25,11 @@ repos:
           - --fix
       - id: ruff-format
   - repo: https://github.com/oxc-project/mirrors-oxfmt
-    rev: v0.53.0
+    rev: v0.45.0
     hooks:
       - id: oxfmt
   - repo: https://github.com/oxc-project/mirrors-oxlint
-    rev: v1.68.0
+    rev: v1.60.0
     hooks:
       - id: oxlint
   - repo: https://github.com/pre-commit/pre-commit-hooks
