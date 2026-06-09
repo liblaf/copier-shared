@@ -60,10 +60,7 @@ jobs:
           cp --target-directory='${{ runner.temp }}' --verbose 'megalinter-reports/megalinter-report.md'
           sudo rm --force --recursive 'mega-linter.log' 'megalinter-reports'
       - id: pr
-        if: >-
-          steps.lint.outputs.has-updated-sources == 1 && (github.event_name ==
-          'push' || github.event.pull_request.head.repo.full_name ==
-          github.repository)
+        if: steps.lint.outputs.has-updated-sources == 1 && (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository)
         name: Create PR
         uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8
         with:
