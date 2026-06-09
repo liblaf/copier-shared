@@ -87,7 +87,7 @@ right place to do it.
 
 ---
 
-#### 📝 License
+### 📝 License
 
 Copyright © 2024 [liblaf](https://github.com/liblaf). <br />
 This project is licensed under the [MIT License](./LICENSE).
