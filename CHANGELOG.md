@@ -7,7 +7,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v0.2.18](https://github.com/liblaf/copier-shared/releases/tag/v0.2.18) - 2026-06-13
+## [v0.2.19](https://github.com/liblaf/copier-shared/releases/tag/v0.2.19) - 2026-06-14
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to c0090fb (#140) - [b8facd8](https://github.com/liblaf/copier-shared/commit/b8facd88bfcd84e606b848fca9d64b3671382ed2) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+
+## [v0.2.18](https://github.com/liblaf/copier-shared/releases/tag/v0.2.18) - 2026-06-14
 
 ### ⚙️ Continuous Integrations
 
@@ -15,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@renovate[bot]](https://github.com/apps/renovate)
 
 ## [v0.2.17](https://github.com/liblaf/copier-shared/releases/tag/v0.2.17) - 2026-06-09
