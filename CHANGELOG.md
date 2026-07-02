@@ -7,6 +7,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2.21](https://github.com/liblaf/copier-shared/releases/tag/v0.2.21) - 2026-07-02
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update liblaf/actions digest to 9b52184 (#159) - [20f4396](https://github.com/liblaf/copier-shared/commit/20f439660a2b6924e13c19f68d8007c5ab63788b) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to 52adca9 (#160) - [8569d83](https://github.com/liblaf/copier-shared/commit/8569d8316c56e8f3fc8478bf3323945831fa14c3) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to 7f35f96 (#162) - [7db7076](https://github.com/liblaf/copier-shared/commit/7db707604c2e584fe4cdfb13bbb4648927b414b4) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to 9f997ae (#163) - [d21d247](https://github.com/liblaf/copier-shared/commit/d21d247c0209a7ff284e25f8c7994b4a62e25406) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to c4ad49d (#164) - [815476d](https://github.com/liblaf/copier-shared/commit/815476d1d8c96f027dd26cff27042a1bcdbccd19) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+- [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci)
+
 ## [v0.2.20](https://github.com/liblaf/copier-shared/releases/tag/v0.2.20) - 2026-06-28
 
 ### ⚙️ Continuous Integrations
@@ -22,6 +37,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@renovate[bot]](https://github.com/apps/renovate)
 
 ## [v0.2.19](https://github.com/liblaf/copier-shared/releases/tag/v0.2.19) - 2026-06-21
