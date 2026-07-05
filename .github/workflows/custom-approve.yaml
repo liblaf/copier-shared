@@ -21,7 +21,7 @@ jobs:
     steps:
       - id: auth
         name: Auth
-        uses: liblaf/actions/auth@9b52184f36acd04a347cbb92fe4155c42a753b4a # v3
+        uses: liblaf/actions/auth@c8e76ded35806a60e54afd4500a5174295fe5fa2 # v3
         with:
           client-id: ${{ vars.APP_CLIENT_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
@@ -32,7 +32,7 @@ jobs:
         env:
           GH_TOKEN: ${{ steps.auth.outputs.token }}
       - name: Approve
-        uses: liblaf/actions/approve@9b52184f36acd04a347cbb92fe4155c42a753b4a # v3
+        uses: liblaf/actions/approve@c8e76ded35806a60e54afd4500a5174295fe5fa2 # v3
         with:
           app: pre-commit-ci
           approve-token: ${{ steps.auth.outputs.token }}
