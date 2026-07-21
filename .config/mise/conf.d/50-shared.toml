@@ -4,4 +4,4 @@
 
 [tasks.copier-update]
 description = "Recopy all configured Copier templates from their answers files."
-file = "https://raw.githubusercontent.com/liblaf/copier-shared/0a2eec61ca60ac0486b2a5ce5c5e13a04961eeeb/mise-tasks/copier-update.sh"
+file = "https://raw.githubusercontent.com/liblaf/copier-shared/fcd894b2d73556adafdc23069083d771f734abf9/mise-tasks/copier-update.sh"
