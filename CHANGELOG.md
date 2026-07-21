@@ -7,7 +7,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v0.2.21](https://github.com/liblaf/copier-shared/releases/tag/v0.2.21) - 2026-07-18
+## [v0.2.22](https://github.com/liblaf/copier-shared/releases/tag/v0.2.22) - 2026-07-21
+
+### 🐛 Bug Fixes
+
+- **(mise)** fetch Copier update task through jsDelivr - [50a3261](https://github.com/liblaf/copier-shared/commit/50a3261576d11b5507df41fb7aab6dbe8b6bf622) by [@liblaf](https://github.com/liblaf)
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to dbb9504 (#181) - [7216803](https://github.com/liblaf/copier-shared/commit/721680343124ed609e772eb5d9e67a6facca182b) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to d31e68a (#185) - [dafad88](https://github.com/liblaf/copier-shared/commit/dafad88743007f4efc8e89663ec15b0b92a56a70) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update actions/checkout digest to 3d3c42e (#184) - [79a2364](https://github.com/liblaf/copier-shared/commit/79a2364c2b0f8e538c41261fa1abffd9548b26e1) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+- [@liblaf](https://github.com/liblaf)
+
+## [v0.2.21](https://github.com/liblaf/copier-shared/releases/tag/v0.2.21) - 2026-07-19
 
 ### ⚙️ Continuous Integrations
 
@@ -31,10 +48,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
+- [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
 - [@renovate[bot]](https://github.com/apps/renovate)
 - [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci)
-- [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
-- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 
 ## [v0.2.20](https://github.com/liblaf/copier-shared/releases/tag/v0.2.20) - 2026-06-28
 
