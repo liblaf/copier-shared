@@ -7,6 +7,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2.23](https://github.com/liblaf/copier-shared/releases/tag/v0.2.23) - 2026-07-25
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to 6f26724 (#186) - [35fdb9b](https://github.com/liblaf/copier-shared/commit/35fdb9bff86e6529345e95beb2963ca02fc94394) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to e31784b (#188) - [be79eec](https://github.com/liblaf/copier-shared/commit/be79eecfecbbf7c114455854db5f46891d9f9004) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to 492cc69 (#189) - [6365f50](https://github.com/liblaf/copier-shared/commit/6365f5004ea21d47f3ca5d44fb92f50bf6bb8e5f) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update jdx/mise-action digest to 9e7f763 (#190) - [437bc86](https://github.com/liblaf/copier-shared/commit/437bc8661c06728ab3cd89410f53d5b58c53a910) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to 1642642 (#192) - [0352e00](https://github.com/liblaf/copier-shared/commit/0352e00476764f8209abfa881c964a2a81fce529) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+
 ## [v0.2.22](https://github.com/liblaf/copier-shared/releases/tag/v0.2.22) - 2026-07-21
 
 ### 🐛 Bug Fixes
@@ -21,6 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@renovate[bot]](https://github.com/apps/renovate)
 - [@liblaf](https://github.com/liblaf)
 
