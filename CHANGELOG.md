@@ -7,7 +7,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v0.2.23](https://github.com/liblaf/copier-shared/releases/tag/v0.2.23) - 2026-07-25
+## [v0.2.24](https://github.com/liblaf/copier-shared/releases/tag/v0.2.24) - 2026-08-01
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update liblaf/actions digest to f53e930 (#193) - [d2e8204](https://github.com/liblaf/copier-shared/commit/d2e82044e28428793316f1a039ce00fbca08f2c3) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to c15f428 (#195) - [d7cff24](https://github.com/liblaf/copier-shared/commit/d7cff2438d12b6680b9024f9f45b34baa0a51de2) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to 863927c (#196) - [475fbda](https://github.com/liblaf/copier-shared/commit/475fbda13a45a6d266b12ba7d061bc16be1626f9) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/megalinter-custom-flavor-all digest to 4e698ae (#197) - [012c6b3](https://github.com/liblaf/copier-shared/commit/012c6b37d9bb01526026029e29b22e86980beaca) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update jdx/mise-action digest to 7e36c90 (#198) - [84d5a09](https://github.com/liblaf/copier-shared/commit/84d5a09bee0950729a64b477ec18d5121b93ffe9) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+- [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci)
+
+## [v0.2.23](https://github.com/liblaf/copier-shared/releases/tag/v0.2.23) - 2026-07-26
 
 ### ⚙️ Continuous Integrations
 
@@ -19,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@renovate[bot]](https://github.com/apps/renovate)
 
 ## [v0.2.22](https://github.com/liblaf/copier-shared/releases/tag/v0.2.22) - 2026-07-21
