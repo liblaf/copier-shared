@@ -34,7 +34,6 @@ jobs:
       - name: Approve
         uses: liblaf/actions/approve@5f3779277c5b88e27b28ad3695390aa7227b9789 # v3
         with:
-          app: pre-commit-ci
           approve-token: ${{ steps.auth.outputs.token }}
-          label: automerge
+          pull: ${{ github.event.pull_request.number }}
           reviewer: ${{ steps.auth.outputs.committer-name }}
