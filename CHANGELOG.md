@@ -7,12 +7,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v0.2.26](https://github.com/liblaf/copier-shared/releases/tag/v0.2.26) - 2026-08-26
+## [v0.2.26](https://github.com/liblaf/copier-shared/releases/tag/v0.2.26) - 2026-08-31
+
+### 🛠 Builds
+
+- **(deps)** update lint hooks and simplify rumdl config - [7900e1c](https://github.com/liblaf/copier-shared/commit/7900e1c7da6cb5a2cf831f13993099fcd74626f2) by [@liblaf](https://github.com/liblaf)
 
 ### ⚙️ Continuous Integrations
 
 - **(deps)** update liblaf/actions digest to 5f37792 (#211) - [975f367](https://github.com/liblaf/copier-shared/commit/975f3676555b2f7362a3621303ba1c8b18c308ed) by [@renovate[bot]](https://github.com/apps/renovate)
 - **(deps)** update jdx/mise-action digest to c2a8761 (#215) - [8a2c6a3](https://github.com/liblaf/copier-shared/commit/8a2c6a349d84abcad0780dce6e3d2d33c798b375) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/actions digest to 73cad64 (#217) - [acf98fe](https://github.com/liblaf/copier-shared/commit/acf98fed4f276fffdc220a38ce6c0ba7ae00d6cb) by [@renovate[bot]](https://github.com/apps/renovate)
 - target pull request in custom approval workflow - [16a8c8e](https://github.com/liblaf/copier-shared/commit/16a8c8eede8b5af663983d1361393acb37eedef8) by [@liblaf](https://github.com/liblaf)
 - fix shared workflow output handling - [a32a6ea](https://github.com/liblaf/copier-shared/commit/a32a6ea3d274b36e3593a0995a3b8c00a11fa379) by [@liblaf](https://github.com/liblaf)
 
@@ -21,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [@liblaf](https://github.com/liblaf)
 - [@renovate[bot]](https://github.com/apps/renovate)
 - [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 
 ## [v0.2.25](https://github.com/liblaf/copier-shared/releases/tag/v0.2.25) - 2026-08-16
 
