@@ -33,7 +33,7 @@ jobs:
     steps:
       - id: auth
         name: Auth
-        uses: liblaf/actions/auth@196eb56785012be2e464f8ba1cfa4427a466da4d # v3
+        uses: liblaf/actions/auth@3760e21400b668f031c052478945ea3555a1c39d # v3
         with:
           client-id: ${{ vars.APP_CLIENT_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
@@ -90,12 +90,12 @@ jobs:
     steps:
       - id: auth
         name: Auth
-        uses: liblaf/actions/auth@196eb56785012be2e464f8ba1cfa4427a466da4d # v3
+        uses: liblaf/actions/auth@3760e21400b668f031c052478945ea3555a1c39d # v3
         with:
           client-id: ${{ vars.APP_CLIENT_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Approve
-        uses: liblaf/actions/approve@196eb56785012be2e464f8ba1cfa4427a466da4d # v3
+        uses: liblaf/actions/approve@3760e21400b668f031c052478945ea3555a1c39d # v3
         with:
           approve-token: ${{ steps.auth.outputs.token }}
           pull: ${{ needs.mega-linter.outputs.pull-request-url }}
