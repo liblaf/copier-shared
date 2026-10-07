@@ -7,7 +7,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v0.2.28](https://github.com/liblaf/copier-shared/releases/tag/v0.2.28) - 2026-10-01
+## [v0.2.29](https://github.com/liblaf/copier-shared/releases/tag/v0.2.29) - 2026-10-07
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update jdx/mise-action digest to 94c60b3 (#234) - [9d52b8d](https://github.com/liblaf/copier-shared/commit/9d52b8db6ca60fd9ae87d669fe8ca146b6ca5ffb) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/actions digest to 639e227 (#235) - [1d2e7a2](https://github.com/liblaf/copier-shared/commit/1d2e7a245f64b73b9972ebbd972a5e91e40b2740) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update jdx/mise-action digest to 2d8d4ca (#237) - [0d2fc0f](https://github.com/liblaf/copier-shared/commit/0d2fc0f73883b099e1a6bf05289e139ef514af8f) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update actions/upload-artifact digest to cf430e0 (#239) - [b2a94a5](https://github.com/liblaf/copier-shared/commit/b2a94a52f2971e1b3299938bee0b674ba2862fd2) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+- [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci)
+
+## [v0.2.28](https://github.com/liblaf/copier-shared/releases/tag/v0.2.28) - 2026-10-04
 
 ### ⚙️ Continuous Integrations
 
@@ -16,6 +30,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
+- [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
 - [@renovate[bot]](https://github.com/apps/renovate)
 - [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci)
 
