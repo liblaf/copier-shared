@@ -7,7 +7,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v0.2.31](https://github.com/liblaf/copier-shared/releases/tag/v0.2.31) - 2026-10-24
+## [v0.2.32](https://github.com/liblaf/copier-shared/releases/tag/v0.2.32) - 2026-10-27
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update jdx/mise-action digest to 6be3c7e (#253) - [0b5786c](https://github.com/liblaf/copier-shared/commit/0b5786ccaf965eee1bd79ba92588cfb2059ca54f) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+- [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci)
+
+## [v0.2.31](https://github.com/liblaf/copier-shared/releases/tag/v0.2.31) - 2026-10-25
 
 ### ⚙️ Continuous Integrations
 
@@ -18,6 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@renovate[bot]](https://github.com/apps/renovate)
 - [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci)
 
