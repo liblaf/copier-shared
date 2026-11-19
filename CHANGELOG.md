@@ -7,7 +7,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v0.2.33](https://github.com/liblaf/copier-shared/releases/tag/v0.2.33) - 2026-11-13
+## [v0.2.34](https://github.com/liblaf/copier-shared/releases/tag/v0.2.34) - 2026-11-19
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update jdx/mise-action digest to 236a21c (#267) - [1a1bb56](https://github.com/liblaf/copier-shared/commit/1a1bb564555c28ebb4c80fabafbd9ff26605d202) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update jdx/mise-action digest to 90f833d (#270) - [f34f0f0](https://github.com/liblaf/copier-shared/commit/f34f0f001fbb002eb634d19bf6a79e3b78567f32) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+- [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci)
+
+## [v0.2.33](https://github.com/liblaf/copier-shared/releases/tag/v0.2.33) - 2026-11-15
 
 ### ⚙️ Continuous Integrations
 
@@ -21,6 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@renovate[bot]](https://github.com/apps/renovate)
 - [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci)
 - [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
